@@ -695,6 +695,239 @@ body {
 
 
 
+/*------------------main-block-main-page-start-------------------*/
+
+
+.main-content {
+
+    &__main-block-main-page {}
+}
+
+.main-block-main-page {
+
+    margin-top: 200px;
+    margin-bottom: 70px;
+
+    @media (max-width: 1199.98px) {
+        margin-top: 50px;
+    }
+
+    @media (max-width: 749.98px) {
+        margin-bottom: 100px;
+    }
+
+    &__container {}
+
+    &__body {}
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 749.98px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        flex: 1 1 50%;
+        position: relative;
+
+        @media (max-width: 749.98px) {
+            & {
+                &:first-child {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        font-size: 52px;
+        font-weight: 900;
+        color: #7A40D3;
+
+        line-height: calc(62 / 52 * 100%);
+
+        margin-bottom: 30px;
+
+        @media (max-width: 429.98px) {
+            font-size: 38px;
+        }
+
+        &_style-aqua {
+            color: #02CED8;
+
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: url(../img/main-page-main-block/icon-line-1.svg);
+                top: 40%;
+                left: 20%;
+                height: 0px;
+            }
+        }
+
+    }
+
+    &__info {
+        font-size: 24px;
+        font-weight: 900;
+        color: #7A40D3;
+
+        line-height: calc(34 / 24 * 100%);
+
+        margin-bottom: 40px;
+        padding-right: 70px;
+
+        @media (max-width: 749.98px) {
+            padding-right: 10px;
+        }
+
+        @media (max-width: 429.98px) {
+            font-size: 20px;
+        }
+    }
+
+    &__button {
+        background-color: #7ED956;
+        padding: 12px 40px;
+        border-radius: 10px;
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+
+        border: 2px solid #7ED956;
+
+        transition: all ease 600ms;
+
+        @media (max-width: 429.98px) {
+            font-size: 20px;
+
+            padding: 12px 20px;
+        }
+
+        &:hover {
+            background-color: white;
+            color: #7ED956;
+        }
+    }
+
+    &__img-body {
+        position: relative;
+        width: 80%;
+
+        @media (max-width: 1199.98px) {
+            width: 100%;
+        }
+    }
+
+    &__img-item {
+        width: 100%;
+    }
+
+    &__decor-icon {
+        position: absolute;
+
+        width: 20%;
+        height: 20%;
+
+        &:nth-child(2) {
+            top: -5%;
+            left: 15%;
+        }
+
+        &:nth-child(3) {
+            top: -5%;
+            left: 87%;
+        }
+
+        &:nth-child(4) {
+            top: 50%;
+            left: 0%;
+        }
+
+        &:nth-child(5) {
+            top: 57%;
+            left: 70%;
+        }
+
+        &:nth-child(6) {
+            top: 85%;
+            left: 85%;
+
+            @media (max-width: 369.98px) {
+                z-index: 2;
+            }
+        }
+    }
+
+    &__quantity-body {}
+}
+
+.-container {}
+
+.quantity-body {
+    box-shadow: 0px 0px 3px 2px rgb(0 0 1 / 20%);
+    background-color: white;
+
+    display: flex;
+    width: max-content;
+    position: absolute;
+    top: 95%;
+    left: -7%;
+
+    column-gap: 20px;
+
+    border-radius: 10px;
+
+    padding: 20px 40px;
+
+    @media (max-width: 619.98px) {
+        left: 0%;
+    }
+
+    @media (max-width: 369.98px) {
+        padding: 20px;
+    }
+
+    &__students {
+        padding-right: 10px;
+        border-right: 1px solid rgb(107 107 107 / 30%);
+    }
+
+    &__title {
+        color: #6B6B6B;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+
+    }
+
+    &__quantity {
+        font-size: 28px;
+        font-weight: 900;
+
+
+        &_style-purpur {
+            color: #7A40D3;
+        }
+
+        &_style-pink {
+            color: #ED5087;
+        }
+
+    }
+
+    &__lessons {}
+}
+
+
+/*------------------main-block-main-page-end-------------------*/
+
+
+
 /*------------------educational-center-start-------------------*/
 
 .main-content {
@@ -703,8 +936,6 @@ body {
 }
 
 .educational-center {
-
-    margin-top: 136px;
     margin-bottom: 50px;
 
     &__container {}
@@ -1041,6 +1272,181 @@ body {
 
 
 /*------------------top-offers-end-------------------*/
+
+
+
+/*------------------main-block-preparation-for-school-start-------------------*/
+
+.main-content {
+
+    &__main-block-preparation-for-school {}
+}
+
+.main-block-preparation-for-school {
+
+    margin-top: 200px;
+    margin-bottom: 70px;
+
+    @media (max-width: 1199.98px) {
+        margin-top: 50px;
+    }
+
+    @media (max-width: 749.98px) {
+        margin-bottom: 100px;
+    }
+
+    &__container {}
+
+    &__content {
+        background-image: url(../img/main-block-preparation-for-school/Purple_and_Pink_Modern_Language_Course_Home_Page_Desktop_Prototype\ \(15\)\ 1.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 250px;
+        padding-bottom: 80px;
+    }
+
+    &__header {
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        font-size: 52px;
+        font-weight: 900;
+        color: #7A40D3;
+
+        line-height: calc(62 / 52 * 100%);
+
+        text-align: center;
+
+        width: max-content;
+        margin: 0 auto;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: url(../img/main-block-preparation-for-school/icon-line-1.svg);
+            top: 40%;
+            right: 0%;
+            height: 0px;
+        }
+    }
+}
+
+.-container {}
+
+.main-block-preparation {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 60px;
+    }
+
+    &__item {
+        flex: 45%;
+
+        display: flex;
+
+        &:nth-child(1) {
+            justify-content: flex-end;
+
+            &:nth-child(1)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                right: 5%;
+            }
+
+            &:nth-child(1)>:nth-child(1) {
+                margin-right: 15%;
+            }
+        }
+
+        &:nth-child(2) {
+            justify-content: flex-start;
+
+            &:nth-child(2)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                left: 5%;
+            }
+
+            &:nth-child(2)>:nth-child(1) {
+                margin-left: 15%;
+            }
+        }
+
+        &:nth-child(3) {
+            justify-content: flex-end;
+
+            &:nth-child(3)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                right: 5%;
+            }
+
+            &:nth-child(3)>:nth-child(1) {
+                margin-right: 25%;
+            }
+        }
+
+        &:nth-child(4) {
+            justify-content: flex-start;
+
+            &:nth-child(4)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                left: 5%;
+            }
+
+            &:nth-child(4)>:nth-child(1) {
+                margin-left: 25%;
+            }
+        }
+    }
+
+    &__card-body {
+        width: 300px;
+        height: auto;
+        box-shadow: 0px 0px 3px 2px rgb(0 0 1 / 20%);
+
+        padding: 30px 20px 20px 20px;
+
+        border-radius: 10px;
+
+        background-color: white;
+
+        position: relative;
+
+
+    }
+
+    &__card-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    &__card-text {
+        font-size: 18px;
+        color: #6B6B6B;
+
+        line-height: calc(24 / 18 * 100%);
+    }
+
+
+    &__decor-icon {
+        width: 48px;
+        height: 48px;
+
+
+    }
+}
+
+
+/*------------------main-block-preparation-for-school-end-------------------*/
 
 
 

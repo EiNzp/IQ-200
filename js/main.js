@@ -74,8 +74,8 @@ if (subLists.length > 0) {
 // Получаем элементы, с которыми будем работать
 const menu = document.querySelector('.header'); // Всё меню
 const menuItem = document.querySelector('.info-body-header__info'); // Определённый элемент меню
-const block1 = document.querySelector('.production-and-delivery__info'); // Первый блок
-const block2 = document.querySelector('.catalog'); // Второй блок
+const block1 = document.querySelector('.main-block-main-page__title'); // Первый блок
+const block2 = document.querySelector('.educational-center__header-title'); // Второй блок
 
 let menuHidden = false; // Флаг, показывающий, что меню задвинуто
 let menuItemHidden = false; // Флаг, показывающий, что элемент меню скрыт
