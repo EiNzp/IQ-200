@@ -1275,6 +1275,90 @@ body {
 
 
 
+/*------------------why-choose-us-start-------------------*/
+
+.main-content {
+
+    &__why-choose-us {}
+}
+
+.why-choose-us {
+    margin-bottom: 50px;
+
+    &__container {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 60px 0 40px 0;
+        text-align: center;
+    }
+
+    &__header-title {
+        color: #023a51;
+        font-size: 35px;
+        line-height: calc(40 / 35 * 100%);
+        font-weight: 700;
+        color: #7A40D3;
+
+        &_style-aqua {
+            color: #02CED8;
+        }
+    }
+
+    &__list {
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon-body {}
+
+    &__icon-item {
+        width: 96px;
+
+        @media (max-width: 749.98px) {
+            & {
+                width: 86px;
+            }
+        }
+
+        @media (max-width: 429.98px) {
+            & {
+                width: 60px;
+            }
+        }
+    }
+
+    &__text {
+        color: #7A40D3;
+        font-size: 18px;
+        font-weight: 900;
+
+        margin-left: 10px;
+
+        @media (max-width: 429.98px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.-container {}
+
+
+/*------------------why-choose-us-end-------------------*/
+
+
+
 /*------------------main-block-preparation-for-school-start-------------------*/
 
 .main-content {
@@ -1303,10 +1387,17 @@ body {
         background-position: center bottom;
         background-size: 250px;
         padding-bottom: 80px;
+
+        @media (max-width: 689.98px) {
+            background-position: center center;
+
+            padding-bottom: 0px;
+        }
     }
 
     &__header {
         margin-bottom: 60px;
+        display: flex;
     }
 
     &__title {
@@ -1322,12 +1413,43 @@ body {
         margin: 0 auto;
         position: relative;
 
+        @media (max-width: 429.98px) {
+            & {
+                font-size: 38px;
+            }
+        }
+
         &::before {
             position: absolute;
             content: url(../img/main-block-preparation-for-school/icon-line-1.svg);
             top: 40%;
             right: 0%;
             height: 0px;
+
+            @media (max-width: 555.98px) {
+                & {
+                    top: 70%;
+                    right: 30%;
+                }
+            }
+
+            @media (max-width: 449.98px) {
+                & {
+                    right: 20%;
+                }
+            }
+
+            @media (max-width: 429.98px) {
+                & {
+                    right: 0%;
+                }
+            }
+
+            @media (max-width: 413.98px) {
+                & {
+                    right: 22%;
+                }
+            }
         }
     }
 }
@@ -1342,6 +1464,8 @@ body {
         justify-content: center;
 
         gap: 60px;
+
+
     }
 
     &__item {
@@ -1360,6 +1484,12 @@ body {
 
             &:nth-child(1)>:nth-child(1) {
                 margin-right: 15%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
             }
         }
 
@@ -1374,6 +1504,12 @@ body {
 
             &:nth-child(2)>:nth-child(1) {
                 margin-left: 15%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
             }
         }
 
@@ -1388,6 +1524,12 @@ body {
 
             &:nth-child(3)>:nth-child(1) {
                 margin-right: 25%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
             }
         }
 
@@ -1402,6 +1544,12 @@ body {
 
             &:nth-child(4)>:nth-child(1) {
                 margin-left: 25%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
             }
         }
     }
