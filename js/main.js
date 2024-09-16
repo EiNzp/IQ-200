@@ -80,8 +80,22 @@ const menuItem = document.querySelector('.info-body-header__info'); // Опре�
 let block1
 if (document.querySelector('.main-block-main-page__title')) {
   block1 = document.querySelector('.main-block-main-page__title');
-} else if (document.querySelector('.main-block-preparation-for-school__title')) {
-  block1 = document.querySelector('.main-block-preparation-for-school__title');
+} else if (document.querySelector('.main-block-math-classes__title')) {
+  block1 = document.querySelector('.main-block-math-classes__title');
+} else if (document.querySelector('.main-block-physics__title')) {
+  block1 = document.querySelector('.main-block-physics__title');
+} else if (document.querySelector('.main-block-ukrainian-language-and-literature__title')) {
+  block1 = document.querySelector('.main-block-ukrainian-language-and-literature__title');
+} else if (document.querySelector('.main-block-chemistry__title')) {
+  block1 = document.querySelector('.main-block-chemistry__title');
+} else if (document.querySelector('.main-block-biology__title')) {
+  block1 = document.querySelector('.main-block-biology__title');
+} else if (document.querySelector('.main-block-geography__title')) {
+  block1 = document.querySelector('.main-block-geography__title');
+} else if (document.querySelector('.main-block-story__title')) {
+  block1 = document.querySelector('.main-block-story__title');
+} else if (document.querySelector('.main-block-zno__title')) {
+  block1 = document.querySelector('.main-block-zno__title');
 }
 
 let block2

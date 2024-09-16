@@ -1187,6 +1187,1050 @@ body {
 }
 
 /*------------------main-block-preparation-for-school-end-------------------*/
+/*------------------main-block-math-classes-start-------------------*/
+.main-block-math-classes {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-math-classes {
+    margin-top: 50px;
+  }
+}
+.main-block-math-classes__content {
+  background-image: url(../img/main-block-math-classes/main-block-math-classes-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 250px;
+  padding-bottom: 80px;
+}
+@media (max-width: 689.98px) {
+  .main-block-math-classes__content {
+    background-position: center 358px;
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 657.98px) {
+  .main-block-math-classes__content {
+    background-position: center 419px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-math-classes__content {
+    background-position: center 353px;
+  }
+}
+.main-block-math-classes__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-math-classes__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #7A40D3;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-math-classes__title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 732.98px) {
+  .main-block-math-classes__title_br {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main-block-math-classes__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-math-classes__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-math-classes__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-math-classes__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-math-classes__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-math-classes__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-math-classes__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-math-classes__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-math-classes__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-math-classes__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-math-classes__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-math-classes__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-math-classes__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-math-classes__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-math-classes__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-math-classes__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-math-classes__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-math-classes__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-math-classes__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-math-classes__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-math-classes__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-math-classes__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-math-classes-end-------------------*/
+/*------------------main-block-physics-start-------------------*/
+.main-block-physics {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-physics {
+    margin-top: 50px;
+  }
+}
+.main-block-physics__content {
+  background-image: url(../img/main-block-physics/main-block-physics-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 350px;
+}
+@media (max-width: 689.98px) {
+  .main-block-physics__content {
+    background-position: center 358px;
+    background-size: 250px;
+  }
+}
+.main-block-physics__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-physics__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #7A40D3;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-physics__title {
+    font-size: 38px;
+  }
+}
+.main-block-physics__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-physics__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-physics__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-physics__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-physics__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-physics__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-physics__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-physics__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-physics__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-physics__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-physics__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-physics__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-physics__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-physics__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-physics__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-physics__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-physics__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-physics__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-physics__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-physics__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-physics__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-physics__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-physics-end-------------------*/
+/*------------------main-block-ukrainian-language-and-literature-start-------------------*/
+.main-block-ukrainian-language-and-literature {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-ukrainian-language-and-literature {
+    margin-top: 50px;
+  }
+}
+.main-block-ukrainian-language-and-literature__content {
+  background-image: url(../img/main-block-ukrainian-language-and-literature/main-block-ukrainian-language-and-literature-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 250px;
+}
+@media (max-width: 689.98px) {
+  .main-block-ukrainian-language-and-literature__content {
+    background-position: center 255px;
+    background-size: 250px;
+  }
+}
+@media (max-width: 480.98px) {
+  .main-block-ukrainian-language-and-literature__content {
+    background-position: center 320px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-ukrainian-language-and-literature__content {
+    background-position: center 255px;
+  }
+}
+@media (max-width: 359.98px) {
+  .main-block-ukrainian-language-and-literature__content {
+    background-position: center 270px;
+  }
+}
+.main-block-ukrainian-language-and-literature__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-ukrainian-language-and-literature__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #7A40D3;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-ukrainian-language-and-literature__title {
+    font-size: 38px;
+  }
+}
+.main-block-ukrainian-language-and-literature__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-ukrainian-language-and-literature__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-ukrainian-language-and-literature__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-ukrainian-language-and-literature__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-ukrainian-language-and-literature__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-ukrainian-language-and-literature__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-ukrainian-language-and-literature__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-ukrainian-language-and-literature__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-ukrainian-language-and-literature__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-ukrainian-language-and-literature__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-ukrainian-language-and-literature__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-ukrainian-language-and-literature-end-------------------*/
+/*------------------main-block-chemistry-start-------------------*/
+.main-block-chemistry {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-chemistry {
+    margin-top: 50px;
+  }
+}
+.main-block-chemistry__content {
+  background-image: url(../img/main-block-chemistry/main-block-chemistry-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 150px;
+}
+@media (max-width: 689.98px) {
+  .main-block-chemistry__content {
+    background-position: center 230px;
+    background-size: 250px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-chemistry__content {
+    background-position: center 210px;
+  }
+}
+.main-block-chemistry__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-chemistry__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #7A40D3;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-chemistry__title {
+    font-size: 38px;
+  }
+}
+.main-block-chemistry__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-chemistry__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-chemistry__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-chemistry__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-chemistry__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-chemistry__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-chemistry__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-chemistry__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-chemistry__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-chemistry__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-chemistry__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-chemistry__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-chemistry__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-chemistry__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-chemistry__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-chemistry__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-chemistry__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-chemistry__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-chemistry__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-chemistry__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-chemistry__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-chemistry__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-chemistry-end-------------------*/
+/*------------------main-block-biology-start-------------------*/
+.main-block-biology {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-biology {
+    margin-top: 50px;
+  }
+}
+.main-block-biology__content {
+  background-image: url(../img/main-block-biology/main-block-biology-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 250px;
+}
+@media (max-width: 689.98px) {
+  .main-block-biology__content {
+    background-position: center 230px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-biology__content {
+    background-position: center 210px;
+  }
+}
+.main-block-biology__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-biology__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #7A40D3;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-biology__title {
+    font-size: 38px;
+  }
+}
+.main-block-biology__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-biology__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-biology__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-biology__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-biology__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-biology__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-biology__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-biology__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-biology__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-biology__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-biology__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-biology__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-biology__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-biology__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-biology__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-biology__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-biology__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-biology__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-biology__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-biology__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-biology__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-biology__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-biology-end-------------------*/
+/*------------------main-block-story-end-------------------*/
+.main-block-story {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-story {
+    margin-top: 50px;
+  }
+}
+.main-block-story__content {
+  background-image: url(../img/main-block-story/main-block-story-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 350px;
+}
+@media (max-width: 689.98px) {
+  .main-block-story__content {
+    background-position: center 270px;
+    background-size: 250px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-story__content {
+    background-position: center 250px;
+  }
+}
+.main-block-story__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-story__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #7A40D3;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-story__title {
+    font-size: 38px;
+  }
+}
+.main-block-story__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-story__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-story__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-story__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-story__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-story__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-story__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-story__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-story__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-story__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-story__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-story__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-story__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-story__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-story__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-story__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-story__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-story__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-story__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-story__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-story__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-story__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-story-end-------------------*/
+/*------------------main-block-zno-end-------------------*/
+.main-block-zno {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-zno {
+    margin-top: 50px;
+  }
+}
+.main-block-zno__content {
+  background-image: url(../img/main-block-zno/main-block-zno-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 250px;
+}
+@media (max-width: 689.98px) {
+  .main-block-zno__content {
+    background-position: center 270px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-zno__content {
+    background-position: center 250px;
+  }
+}
+.main-block-zno__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-zno__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #7A40D3;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-zno__title {
+    font-size: 38px;
+  }
+}
+.main-block-zno__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-zno__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-zno__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-zno__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-zno__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-zno__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-zno__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-zno__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-zno__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-zno__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-zno__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-zno__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-zno__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-zno__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-zno__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-zno__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-zno__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-zno__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-zno__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-zno__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-zno__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-zno__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-zno-end-------------------*/
 /*------------------ecommerce-personal-------------------*/
 /*------------------production-and-delivery-------------------*/
 .main-content__production-and-delivery {
