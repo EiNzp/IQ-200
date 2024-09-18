@@ -1018,6 +1018,44 @@ body {
 
 
 
+/*------------------our-goal-start-------------------*/
+
+.main-content {
+
+    &__our-goal {}
+}
+
+.our-goal {
+
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+    &__container {}
+
+    &__info-body {}
+
+    &__info-text {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: calc(32 / 22 * 100%);
+
+        text-align: center;
+
+        @media (max-width: 449.98px) {
+            & {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.-container {}
+
+
+/*------------------our-goal-end-------------------*/
+
+
+
 /*------------------top-offers-start-------------------*/
 
 .main-content {
@@ -1275,6 +1313,142 @@ body {
 
 
 
+/*------------------training-formats-start-------------------*/
+
+.main-content {
+
+    &__training-formats {}
+}
+
+.training-formats {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &__container {}
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 60px 0 40px 0;
+        text-align: center;
+    }
+
+    &__header-title {
+        color: #023a51;
+        font-size: 35px;
+        line-height: calc(40 / 35 * 100%);
+        font-weight: 700;
+        position: relative;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+
+        margin-bottom: 20px;
+
+        // @media (max-width: 1199.98px) {
+        //     & {
+        //         flex-direction: column;
+        //         align-items: center;
+        //     }
+        // }
+
+        @media (max-width: 749.98px) {
+            & {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    &__item {
+        width: 45%;
+
+
+        font-size: 18px;
+        font-weight: 600;
+        line-height: calc(28 / 18 * 100%);
+        text-align: center;
+        color: #7A40D3;
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @media (max-width: 1199.98px) {
+            & {
+                width: 420px;
+            }
+        }
+
+        @media (max-width: 889.98px) {
+            width: 350px;
+        }
+
+        @media (max-width: 449.98px) {
+            & {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__img-body {
+        margin-bottom: 20px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 20px;
+
+        @media (max-width: 1199.98px) {
+            & {
+                width: 420px;
+            }
+        }
+
+        @media (max-width: 889.98px) {
+            width: 350px;
+        }
+
+        @media (max-width: 449.98px) {
+            & {
+                width: 100%;
+            }
+        }
+    }
+
+    &__img-item {
+        width: 100%;
+    }
+
+    &__text {}
+
+    &__info-body {}
+
+    &__info-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: calc(28 / 18 * 100%);
+
+        @media (max-width: 449.98px) {
+            & {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.-container {}
+
+
+/*------------------training-formats-end-------------------*/
+
+
+
 /*------------------why-choose-us-start-------------------*/
 
 .main-content {
@@ -1314,11 +1488,32 @@ body {
 
     &__list {
         margin: 0 auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 5%;
+
+        @media (max-width: 749.98px) {
+            & {
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+        }
     }
 
     &__item {
         display: flex;
         align-items: center;
+
+        flex: 0 0 40%;
+
+        @media (max-width: 749.98px) {
+            & {
+                flex: 100%;
+            }
+        }
     }
 
     &__icon-body {}
@@ -3005,6 +3200,204 @@ body {
 
 
 /*------------------main-block-zno-end-------------------*/
+
+
+
+/*------------------main-block-geography-start-------------------*/
+
+.main-content {
+
+    &__main-block-geography {}
+}
+
+.main-block-geography {
+
+    margin-top: 200px;
+    margin-bottom: 70px;
+
+    @media (max-width: 1199.98px) {
+        margin-top: 50px;
+    }
+
+    &__container {}
+
+    &__content {
+        background-image: url(../img/main-block-geography/main-block-geography-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 300px;
+        // padding-bottom: 80px;
+
+        @media (max-width: 689.98px) {
+            & {
+                background-position: center 320px;
+            }
+        }
+
+        @media (max-width: 429.98px) {
+            & {
+                background-position: center 300px;
+            }
+        }
+    }
+
+    &__header {
+        margin-bottom: 60px;
+        display: flex;
+    }
+
+    &__title {
+        font-size: 52px;
+        font-weight: 900;
+        color: #7A40D3;
+
+        line-height: calc(62 / 52 * 100%);
+
+        text-align: center;
+
+        width: max-content;
+        margin: 0 auto;
+        position: relative;
+
+        @media (max-width: 429.98px) {
+            & {
+                font-size: 38px;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 60px;
+    }
+
+    &__item {
+        flex: 45%;
+
+        display: flex;
+
+        &:nth-child(1) {
+            justify-content: flex-end;
+
+            &:nth-child(1)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                right: 5%;
+            }
+
+            &:nth-child(1)>:nth-child(1) {
+                margin-right: 15%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            justify-content: flex-start;
+
+            &:nth-child(2)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                left: 5%;
+            }
+
+            &:nth-child(2)>:nth-child(1) {
+                margin-left: 15%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            justify-content: flex-end;
+
+            &:nth-child(3)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                right: 5%;
+            }
+
+            &:nth-child(3)>:nth-child(1) {
+                margin-right: 25%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            justify-content: flex-start;
+
+            &:nth-child(4)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                left: 5%;
+            }
+
+            &:nth-child(4)>:nth-child(1) {
+                margin-left: 25%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &__card-body {
+        width: 300px;
+        height: auto;
+        box-shadow: 0px 0px 3px 2px rgb(0 0 1 / 20%);
+
+        padding: 30px 20px 20px 20px;
+
+        border-radius: 10px;
+
+        background-color: white;
+
+        position: relative;
+    }
+
+    &__card-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    &__card-text {
+        font-size: 18px;
+        color: #6B6B6B;
+
+        line-height: calc(24 / 18 * 100%);
+    }
+
+    &__decor-icon {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.-container {}
+
+
+/*------------------main-block-geography-end-------------------*/
 
 
 
