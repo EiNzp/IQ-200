@@ -101,8 +101,8 @@ if (document.querySelector('.main-block-main-page__title')) {
 let block2
 if (document.querySelector('.educational-center__header-title')) {
   block2 = document.querySelector('.educational-center__header-title');
-} else if (document.querySelector('.production-and-delivery__header')) {
-  block2 = document.querySelector('.production-and-delivery__header')
+} else if (document.querySelector('.price-cards__header-title')) {
+  block2 = document.querySelector('.price-cards__header-title')
 }
 
 let menuHidden = false; // Флаг, показывающий, что меню задвинуто
