@@ -1825,6 +1825,146 @@ body {
 
 
 
+/*------------------mission-START-------------------*/
+
+.main-content {
+
+    &__mission {}
+}
+
+.mission {
+
+    &__container {}
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 60px 0 40px 0;
+        text-align: center;
+    }
+
+    &__header-title {
+        color: #023a51;
+        font-size: 35px;
+        line-height: calc(40 / 35 * 100%);
+        font-weight: 700;
+        color: #7A40D3;
+
+        &_style-aqua {
+            color: #02CED8;
+        }
+    }
+
+    &__body {
+        display: flex;
+        gap: 10px;
+
+        background-color: #AFDFEB;
+
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: #AFDFEB;
+            top: 0;
+            left: -100%;
+            position: absolute;
+        }
+
+        &::after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: #AFDFEB;
+            top: 0;
+            left: 100%;
+            position: absolute;
+        }
+
+        @media (max-width: 749.98px) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        flex: 1 1 50%;
+
+        &:nth-child(1) {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            @media (max-width: 749.98px) {
+                order: 2;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__img-body {
+        display: flex;
+        justify-content: center;
+
+        height: max-content;
+    }
+
+    &__img-item {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    &__info-list {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+
+        height: 100%;
+
+        @media (max-width: 749.98px) {
+            padding: 15px;
+        }
+    }
+
+    &__info-item {
+        font-size: 18px;
+        font-weight: 600;
+        color: #7A40D3;
+        position: relative;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            text-indent: 1em;
+        }
+
+        &:nth-child(1)::before,
+        &:nth-child(2)::before {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            content: '';
+            width: 10px;
+            height: 10px;
+            z-index: 2;
+            background-color: #02CED8;
+            border-radius: 50%;
+        }
+    }
+}
+
+.-container {}
+
+
+/*------------------mission-END-------------------*/
+
+
+
 /*------------------main-block-preparation-for-school-start-------------------*/
 
 .main-content {
