@@ -2849,6 +2849,567 @@ body {
 }
 
 /*------------------main-block-geography-end-------------------*/
+/*------------------main-block-financial-literacy-START-------------------*/
+.main-block-financial-literacy {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-financial-literacy {
+    margin-top: 50px;
+  }
+}
+.main-block-financial-literacy__content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .main-block-financial-literacy__content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.main-block-financial-literacy__content-left {
+  flex: 0 0 50%;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: start;
+  padding-top: 40px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-financial-literacy__content-left {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .main-block-financial-literacy__content-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.main-block-financial-literacy__title {
+  font-size: 52px;
+  line-height: 119.2307692308%;
+  font-weight: 900;
+  color: #0196B6;
+  margin-bottom: 15px;
+}
+@media (max-width: 429.98px) {
+  .main-block-financial-literacy__title {
+    font-size: 38px;
+    line-height: 126.3157894737%;
+  }
+}
+.main-block-financial-literacy__description {
+  font-size: 24px;
+  line-height: 1.6;
+  line-height: 141.6666666667%;
+  color: #0296b6;
+  margin: 0;
+}
+@media (max-width: 429.98px) {
+  .main-block-financial-literacy__description {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+.main-block-financial-literacy__content-right {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .main-block-financial-literacy__content-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.main-block-financial-literacy__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .main-block-financial-literacy__image {
+    max-width: 50%;
+  }
+}
+@media (max-width: 430px) {
+  .main-block-financial-literacy__image {
+    max-width: 60%;
+  }
+}
+
+/*------------------main-block-financial-literacy-END-------------------*/
+/*------------------advantages-financial-literacy-START-------------------*/
+.advantages-financial-literacy {
+  margin-bottom: 70px;
+}
+.advantages-financial-literacy__content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .advantages-financial-literacy__content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.advantages-financial-literacy__content-left {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .advantages-financial-literacy__content-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.advantages-financial-literacy__title {
+  color: #023a51;
+  font-size: 35px;
+  line-height: 114.2857142857%;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .advantages-financial-literacy__title {
+    font-size: 20px;
+  }
+}
+.advantages-financial-literacy li {
+  list-style-type: disc;
+}
+.advantages-financial-literacy__list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+.advantages-financial-literacy__list-item {
+  font-size: 18px;
+  color: #0296b6;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.advantages-financial-literacy__list-item::marker {
+  color: #0296b6;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .advantages-financial-literacy__list-item {
+    font-size: 16px;
+  }
+}
+.advantages-financial-literacy__content-right {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .advantages-financial-literacy__content-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.advantages-financial-literacy__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .advantages-financial-literacy__image {
+    max-width: 50%;
+  }
+}
+@media (max-width: 430px) {
+  .advantages-financial-literacy__image {
+    max-width: 60%;
+  }
+}
+
+/*------------------advantages-financial-literacy-END-------------------*/
+/*------------------course-duration-START-------------------*/
+.course-duration {
+  margin-bottom: 70px;
+}
+.course-duration__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0 40px 0;
+  text-align: center;
+}
+.course-duration__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  padding: 10px;
+  row-gap: 20px;
+}
+.course-duration__card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 250px;
+  width: 500px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course-duration__card:nth-child(1), .course-duration__card:nth-child(4) {
+  box-shadow: 0 0px 10px #02CED8;
+}
+.course-duration__card:nth-child(1) .course-duration__card-header, .course-duration__card:nth-child(4) .course-duration__card-header {
+  border-bottom-color: #02CED8;
+}
+.course-duration__card:nth-child(1) .course-duration__button, .course-duration__card:nth-child(4) .course-duration__button {
+  background-color: white;
+  border: 1px solid #02CED8;
+}
+.course-duration__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.course-duration__card:hover:nth-child(1), .course-duration__card:hover:nth-child(4) {
+  background-color: #02CED8;
+}
+.course-duration__card:hover:nth-child(1) .course-duration__card-header, .course-duration__card:hover:nth-child(4) .course-duration__card-header {
+  border-bottom-color: white;
+}
+.course-duration__card:hover:nth-child(1) .course-duration__button, .course-duration__card:hover:nth-child(4) .course-duration__button {
+  border-color: white;
+  border-width: 2px;
+  background-color: #02CED8;
+  font-weight: 500;
+}
+.course-duration__card-body {
+  padding: 15px 30px;
+}
+.course-duration__card-body_offer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.course-duration__card-body_offer h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.course-duration__card-footer {
+  text-align: center;
+  padding: 15px;
+}
+.course-duration__button {
+  font-size: 16px;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.course-duration__button:hover {
+  color: white;
+}
+.course-duration__offer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*------------------course-duration-END-------------------*/
+/*------------------who-is-it-for-START-------------------*/
+.who-is-it-for {
+  margin-bottom: 70px;
+}
+.who-is-it-for__content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .who-is-it-for__content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.who-is-it-for__content-left {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .who-is-it-for__content-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.who-is-it-for__title {
+  color: #023a51;
+  font-size: 35px;
+  line-height: 114.2857142857%;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .who-is-it-for__title {
+    font-size: 20px;
+  }
+}
+.who-is-it-for li {
+  list-style-type: disc;
+}
+.who-is-it-for__list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+.who-is-it-for__list-item {
+  font-size: 18px;
+  color: #0296b6;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.who-is-it-for__list-item::marker {
+  color: #0296b6;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .who-is-it-for__list-item {
+    font-size: 16px;
+  }
+}
+.who-is-it-for__content-right {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .who-is-it-for__content-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.who-is-it-for__image {
+  max-width: 75%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .who-is-it-for__image {
+    max-width: 50%;
+  }
+}
+@media (max-width: 430px) {
+  .who-is-it-for__image {
+    max-width: 60%;
+  }
+}
+
+/*------------------who-is-it-for-END-------------------*/
+/*------------------financial-literacy-sign-up-START-------------------*/
+.financial-literacy-sign-up {
+  margin-bottom: 70px;
+}
+.financial-literacy-sign-up__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.financial-literacy-sign-up__text {
+  color: #347571;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.financial-literacy-sign-up__button {
+  background: linear-gradient(to right, #00a651, #0296b6);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.financial-literacy-sign-up__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.financial-literacy-sign-up__button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/*------------------financial-literacy-sign-up-END-------------------*/
+/*------------------promotions-START-------------------*/
+.main-block-promotions {
+  margin-top: 200px;
+}
+.main-block-promotions__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0 40px 0;
+  text-align: center;
+}
+.main-block-promotions__header-title {
+  color: #023a51;
+  font-size: 35px;
+  line-height: 114.2857142857%;
+  font-weight: 700;
+  position: relative;
+}
+.main-block-promotions__table-block-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.main-block-promotions__table-block-header {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .main-block-promotions__table-block-header {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .main-block-promotions__table-block-header {
+    font-size: 18px;
+  }
+}
+.main-block-promotions__table-referral-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.main-block-promotions__table-header-row {
+  background-color: #f4f4f4;
+}
+.main-block-promotions__table-header {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .main-block-promotions__table-header {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .main-block-promotions__table-header {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+.main-block-promotions__table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.main-block-promotions__table-row:hover {
+  background-color: #f1f1f1;
+}
+.main-block-promotions__table-cell {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .main-block-promotions__table-cell {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .main-block-promotions__table-cell {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+.main-block-promotions__referral-info {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .main-block-promotions__referral-info {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .main-block-promotions__referral-info {
+    font-size: 12px;
+  }
+}
+
+.discount {
+  font-weight: bold;
+  color: #2a9d8f;
+  /* Цвет для скидки */
+}
+
+.count {
+  font-weight: 500;
+  color: #e76f51;
+  /* Цвет для количества друзей */
+}
+
+/*------------------promotions-END-------------------*/
 /*------------------ecommerce-personal-------------------*/
 /*------------------production-and-delivery-------------------*/
 .main-content__production-and-delivery {

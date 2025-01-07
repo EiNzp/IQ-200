@@ -96,11 +96,15 @@ if (document.querySelector('.main-block-main-page__title')) {
   block1 = document.querySelector('.main-block-story__title');
 } else if (document.querySelector('.main-block-zno__title')) {
   block1 = document.querySelector('.main-block-zno__title');
+} else if (document.querySelector('.main-block-financial-literacy__title')) {
+  block1 = document.querySelector('.main-block-financial-literacy__title');
 }
 
 let block2
 if (document.querySelector('.educational-center__header-title')) {
   block2 = document.querySelector('.educational-center__header-title');
+} else if (document.querySelector('.advantages-financial-literacy__title')) {
+  block2 = document.querySelector('.advantages-financial-literacy__title')
 } else if (document.querySelector('.price-cards__header-title')) {
   block2 = document.querySelector('.price-cards__header-title')
 }
