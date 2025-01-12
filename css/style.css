@@ -2557,7 +2557,7 @@ body {
 }
 
 /*------------------main-block-story-end-------------------*/
-/*------------------main-block-zno-end-------------------*/
+/*------------------main-block-zno-START-------------------*/
 .main-block-zno {
   margin-top: 200px;
   margin-bottom: 70px;
@@ -2703,6 +2703,737 @@ body {
 }
 
 /*------------------main-block-zno-end-------------------*/
+/*------------------main-block-english-for-children-START-------------------*/
+.main-block-english-for-children {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-english-for-children {
+    margin-top: 50px;
+  }
+}
+.main-block-english-for-children__content {
+  background-image: url(../img/main-block-english-for-children/main-block-english-for-children-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 250px;
+}
+@media (max-width: 616.98px) {
+  .main-block-english-for-children__content {
+    background-position: center 290px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-english-for-children__content {
+    background-position: center 260px;
+  }
+}
+.main-block-english-for-children__header {
+  margin-bottom: 80px;
+  display: flex;
+}
+.main-block-english-for-children__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #0196B6;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-english-for-children__title {
+    font-size: 38px;
+  }
+}
+.main-block-english-for-children__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-english-for-children__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-english-for-children__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-english-for-children__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-english-for-children__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-english-for-children__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-english-for-children__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-english-for-children__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-english-for-children__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-english-for-children__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-english-for-children__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-english-for-children__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-english-for-children__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-english-for-children__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-english-for-children__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-english-for-children__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-english-for-children__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-english-for-children__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-english-for-children__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-english-for-children__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-english-for-children__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-english-for-children__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-english-for-children-end-------------------*/
+/*------------------main-block-english-for-adults-START-------------------*/
+.main-block-english-for-adults {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-english-for-adults {
+    margin-top: 50px;
+  }
+}
+.main-block-english-for-adults__content {
+  background-image: url(../img/main-block-english-for-adults/main-block-english-for-adults-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 70px;
+}
+@media (max-width: 689.98px) {
+  .main-block-english-for-adults__content {
+    background-position: center 270px;
+    background-size: 150px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-english-for-adults__content {
+    background-position: center 250px;
+  }
+}
+.main-block-english-for-adults__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-english-for-adults__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #0196B6;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-english-for-adults__title {
+    font-size: 38px;
+  }
+}
+.main-block-english-for-adults__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-english-for-adults__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-english-for-adults__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-english-for-adults__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-english-for-adults__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-english-for-adults__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-english-for-adults__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-english-for-adults__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-english-for-adults__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-english-for-adults__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-english-for-adults__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-english-for-adults__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-english-for-adults__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-english-for-adults__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-english-for-adults__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-english-for-adults__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-english-for-adults__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-english-for-adults__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-english-for-adults__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-english-for-adults__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-english-for-adults__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-english-for-adults__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-english-for-adults-end-------------------*/
+/*------------------main-block-hmt-in-english-START-------------------*/
+.main-block-hmt-in-english {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-hmt-in-english {
+    margin-top: 50px;
+  }
+}
+.main-block-hmt-in-english__content {
+  background-image: url(../img/main-block-hmt-in-english/main-block-hmt-in-english-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 250px;
+}
+@media (max-width: 689.98px) {
+  .main-block-hmt-in-english__content {
+    background-position: center 270px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-hmt-in-english__content {
+    background-position: center 250px;
+  }
+}
+.main-block-hmt-in-english__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-hmt-in-english__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #0196B6;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-hmt-in-english__title {
+    font-size: 38px;
+  }
+}
+.main-block-hmt-in-english__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-hmt-in-english__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-hmt-in-english__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-hmt-in-english__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-hmt-in-english__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-hmt-in-english__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-hmt-in-english__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-hmt-in-english__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-hmt-in-english__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-hmt-in-english__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-hmt-in-english__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-hmt-in-english__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-hmt-in-english__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-hmt-in-english__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-hmt-in-english__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-hmt-in-english__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-hmt-in-english__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-hmt-in-english__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-hmt-in-english__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-hmt-in-english__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-hmt-in-english__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-hmt-in-english__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-hmt-in-english-end-------------------*/
+/*------------------main-block-preparation-for-international-exams-START-------------------*/
+.main-block-preparation-for-international-exams {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-preparation-for-international-exams {
+    margin-top: 50px;
+  }
+}
+.main-block-preparation-for-international-exams__content {
+  background-image: url(../img/main-block-preparation-for-international-exams/main-block-preparation-for-international-exams-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 200px;
+}
+@media (max-width: 689.98px) {
+  .main-block-preparation-for-international-exams__content {
+    background-position: center 270px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-preparation-for-international-exams__content {
+    background-position: center 250px;
+  }
+}
+.main-block-preparation-for-international-exams__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-preparation-for-international-exams__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #0196B6;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-preparation-for-international-exams__title {
+    font-size: 38px;
+  }
+}
+.main-block-preparation-for-international-exams__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-preparation-for-international-exams__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-preparation-for-international-exams__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-preparation-for-international-exams__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-preparation-for-international-exams__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-preparation-for-international-exams__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-preparation-for-international-exams__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-preparation-for-international-exams__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-preparation-for-international-exams__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-preparation-for-international-exams__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-preparation-for-international-exams__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-preparation-for-international-exams__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-preparation-for-international-exams__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-preparation-for-international-exams__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-preparation-for-international-exams__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-preparation-for-international-exams__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-preparation-for-international-exams__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-preparation-for-international-exams__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-preparation-for-international-exams__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-preparation-for-international-exams__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-preparation-for-international-exams__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-preparation-for-international-exams__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-preparation-for-international-exams-end-------------------*/
+/*------------------main-block-business-english-START-------------------*/
+.main-block-business-english {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-business-english {
+    margin-top: 50px;
+  }
+}
+.main-block-business-english__content {
+  background-image: url(../img/main-block-business-english/main-block-business-english-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 250px;
+}
+@media (max-width: 689.98px) {
+  .main-block-business-english__content {
+    background-position: center 270px;
+  }
+}
+@media (max-width: 429.98px) {
+  .main-block-business-english__content {
+    background-position: center 250px;
+  }
+}
+.main-block-business-english__header {
+  margin-bottom: 60px;
+  display: flex;
+}
+.main-block-business-english__title {
+  font-size: 52px;
+  font-weight: 900;
+  color: #0196B6;
+  line-height: 119.2307692308%;
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 429.98px) {
+  .main-block-business-english__title {
+    font-size: 38px;
+  }
+}
+.main-block-business-english__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main-block-business-english__item {
+  flex: 45%;
+  display: flex;
+}
+.main-block-business-english__item:nth-child(1) {
+  justify-content: flex-end;
+}
+.main-block-business-english__item:nth-child(1):nth-child(1) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-business-english__item:nth-child(1):nth-child(1) > :nth-child(1) {
+  margin-right: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-business-english__item:nth-child(1):nth-child(1) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-business-english__item:nth-child(2) {
+  justify-content: flex-start;
+}
+.main-block-business-english__item:nth-child(2):nth-child(2) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-business-english__item:nth-child(2):nth-child(2) > :nth-child(1) {
+  margin-left: 15%;
+}
+@media (max-width: 689.98px) {
+  .main-block-business-english__item:nth-child(2):nth-child(2) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-business-english__item:nth-child(3) {
+  justify-content: flex-end;
+}
+.main-block-business-english__item:nth-child(3):nth-child(3) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  right: 5%;
+}
+.main-block-business-english__item:nth-child(3):nth-child(3) > :nth-child(1) {
+  margin-right: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-business-english__item:nth-child(3):nth-child(3) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-business-english__item:nth-child(4) {
+  justify-content: flex-start;
+}
+.main-block-business-english__item:nth-child(4):nth-child(4) > :nth-child(1) > :nth-child(3) {
+  position: absolute;
+  top: -22%;
+  left: 5%;
+}
+.main-block-business-english__item:nth-child(4):nth-child(4) > :nth-child(1) {
+  margin-left: 25%;
+}
+@media (max-width: 689.98px) {
+  .main-block-business-english__item:nth-child(4):nth-child(4) > :nth-child(1) {
+    margin: 0 auto;
+  }
+}
+.main-block-business-english__card-body {
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 1, 0.2);
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+.main-block-business-english__card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.main-block-business-english__card-text {
+  font-size: 18px;
+  color: #6B6B6B;
+  line-height: 133.3333333333%;
+}
+.main-block-business-english__decor-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/*------------------main-block-business-english-end-------------------*/
 /*------------------main-block-geography-start-------------------*/
 .main-block-geography {
   margin-top: 200px;
@@ -3034,10 +3765,12 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  margin-top: -200px;
 }
 @media (max-width: 768px) {
   .advantages-financial-literacy__image {
     max-width: 50%;
+    margin-top: 0px;
   }
 }
 @media (max-width: 430px) {
@@ -3282,6 +4015,537 @@ body {
 }
 
 /*------------------financial-literacy-sign-up-END-------------------*/
+/*------------------main-block-entrepreneurship-START-------------------*/
+.main-block-entrepreneurship {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-entrepreneurship {
+    margin-top: 50px;
+  }
+}
+.main-block-entrepreneurship__content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .main-block-entrepreneurship__content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.main-block-entrepreneurship__content-left {
+  flex: 0 0 50%;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: start;
+  padding-top: 40px;
+}
+@media (max-width: 1199.98px) {
+  .main-block-entrepreneurship__content-left {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .main-block-entrepreneurship__content-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.main-block-entrepreneurship__title {
+  font-size: 52px;
+  line-height: 119.2307692308%;
+  font-weight: 900;
+  color: #0196B6;
+  margin-bottom: 15px;
+}
+@media (max-width: 429.98px) {
+  .main-block-entrepreneurship__title {
+    font-size: 38px;
+    line-height: 126.3157894737%;
+  }
+}
+.main-block-entrepreneurship__description {
+  font-size: 24px;
+  line-height: 1.6;
+  line-height: 141.6666666667%;
+  color: #0296b6;
+  margin: 0;
+}
+@media (max-width: 429.98px) {
+  .main-block-entrepreneurship__description {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+.main-block-entrepreneurship__content-right {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .main-block-entrepreneurship__content-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.main-block-entrepreneurship__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .main-block-entrepreneurship__image {
+    max-width: 50%;
+  }
+}
+@media (max-width: 430px) {
+  .main-block-entrepreneurship__image {
+    max-width: 60%;
+  }
+}
+
+/*------------------main-block-entrepreneurship-END-------------------*/
+/*------------------course-events-entrepreneurship-START-------------------*/
+.course-events-entrepreneurship {
+  margin-bottom: 70px;
+}
+.course-events-entrepreneurship__content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .course-events-entrepreneurship__content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.course-events-entrepreneurship__content-left {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .course-events-entrepreneurship__content-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.course-events-entrepreneurship__title {
+  color: #023a51;
+  font-size: 35px;
+  line-height: 114.2857142857%;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .course-events-entrepreneurship__title {
+    font-size: 20px;
+  }
+}
+.course-events-entrepreneurship li {
+  list-style-type: decimal;
+}
+.course-events-entrepreneurship__list {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin: 0;
+}
+.course-events-entrepreneurship__list-item {
+  font-size: 18px;
+  color: #0296b6;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.course-events-entrepreneurship__list-item::marker {
+  color: #0296b6;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .course-events-entrepreneurship__list-item {
+    font-size: 16px;
+  }
+}
+.course-events-entrepreneurship__content-right {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .course-events-entrepreneurship__content-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.course-events-entrepreneurship__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .course-events-entrepreneurship__image {
+    max-width: 50%;
+  }
+}
+@media (max-width: 430px) {
+  .course-events-entrepreneurship__image {
+    max-width: 60%;
+  }
+}
+
+/*------------------course-events-entrepreneurship-END-------------------*/
+/*------------------advantages-entrepreneurship-START-------------------*/
+.advantages-entrepreneurship {
+  margin-bottom: 70px;
+}
+.advantages-entrepreneurship__content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .advantages-entrepreneurship__content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.advantages-entrepreneurship__content-left {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .advantages-entrepreneurship__content-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.advantages-entrepreneurship__title {
+  color: #023a51;
+  font-size: 35px;
+  line-height: 114.2857142857%;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .advantages-entrepreneurship__title {
+    font-size: 20px;
+  }
+}
+.advantages-entrepreneurship li {
+  list-style-type: disc;
+}
+.advantages-entrepreneurship__list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+.advantages-entrepreneurship__list-item {
+  font-size: 18px;
+  color: #0296b6;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.advantages-entrepreneurship__list-item::marker {
+  color: #0296b6;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .advantages-entrepreneurship__list-item {
+    font-size: 16px;
+  }
+}
+.advantages-entrepreneurship__content-right {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .advantages-entrepreneurship__content-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.advantages-entrepreneurship__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .advantages-entrepreneurship__image {
+    max-width: 50%;
+  }
+}
+@media (max-width: 430px) {
+  .advantages-entrepreneurship__image {
+    max-width: 60%;
+  }
+}
+
+/*------------------advantages-entrepreneurship-END-------------------*/
+/*------------------course-duration-entrepreneurship-START-------------------*/
+.course-duration-entrepreneurship {
+  margin-bottom: 70px;
+}
+.course-duration-entrepreneurship__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0 40px 0;
+  text-align: center;
+}
+.course-duration-entrepreneurship__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  padding: 10px;
+  row-gap: 20px;
+}
+.course-duration-entrepreneurship__card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 250px;
+  width: 500px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course-duration-entrepreneurship__card:nth-child(1), .course-duration-entrepreneurship__card:nth-child(4) {
+  box-shadow: 0 0px 10px #02CED8;
+}
+.course-duration-entrepreneurship__card:nth-child(1) .course-duration__card-header, .course-duration-entrepreneurship__card:nth-child(4) .course-duration__card-header {
+  border-bottom-color: #02CED8;
+}
+.course-duration-entrepreneurship__card:nth-child(1) .course-duration__button, .course-duration-entrepreneurship__card:nth-child(4) .course-duration__button {
+  background-color: white;
+  border: 1px solid #02CED8;
+}
+.course-duration-entrepreneurship__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.course-duration-entrepreneurship__card:hover:nth-child(1), .course-duration-entrepreneurship__card:hover:nth-child(4) {
+  background-color: #02CED8;
+}
+.course-duration-entrepreneurship__card:hover:nth-child(1) .course-duration__card-header, .course-duration-entrepreneurship__card:hover:nth-child(4) .course-duration__card-header {
+  border-bottom-color: white;
+}
+.course-duration-entrepreneurship__card:hover:nth-child(1) .course-duration__button, .course-duration-entrepreneurship__card:hover:nth-child(4) .course-duration__button {
+  border-color: white;
+  border-width: 2px;
+  background-color: #02CED8;
+  font-weight: 500;
+}
+.course-duration-entrepreneurship__card-body {
+  padding: 15px 30px;
+}
+.course-duration-entrepreneurship__card-body_offer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.course-duration-entrepreneurship__card-body_offer h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.course-duration-entrepreneurship__card-footer {
+  text-align: center;
+  padding: 15px;
+}
+.course-duration-entrepreneurship__button {
+  font-size: 16px;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.course-duration-entrepreneurship__button:hover {
+  color: white;
+}
+.course-duration-entrepreneurship__offer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*------------------course-duration-entrepreneurship-END-------------------*/
+/*------------------who-is-it-for-entrepreneurship-START-------------------*/
+.who-is-it-for-entrepreneurship {
+  margin-bottom: 70px;
+}
+.who-is-it-for-entrepreneurship__content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .who-is-it-for-entrepreneurship__content {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.who-is-it-for-entrepreneurship__content-left {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .who-is-it-for-entrepreneurship__content-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.who-is-it-for-entrepreneurship__title {
+  color: #023a51;
+  font-size: 35px;
+  line-height: 114.2857142857%;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .who-is-it-for-entrepreneurship__title {
+    font-size: 20px;
+  }
+}
+.who-is-it-for-entrepreneurship li {
+  list-style-type: disc;
+}
+.who-is-it-for-entrepreneurship__list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+.who-is-it-for-entrepreneurship__list-item {
+  font-size: 18px;
+  color: #0296b6;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.who-is-it-for-entrepreneurship__list-item::marker {
+  color: #0296b6;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .who-is-it-for-entrepreneurship__list-item {
+    font-size: 16px;
+  }
+}
+.who-is-it-for-entrepreneurship__content-right {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .who-is-it-for-entrepreneurship__content-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.who-is-it-for-entrepreneurship__image {
+  max-width: 75%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .who-is-it-for-entrepreneurship__image {
+    max-width: 50%;
+  }
+}
+@media (max-width: 430px) {
+  .who-is-it-for-entrepreneurship__image {
+    max-width: 60%;
+  }
+}
+
+/*------------------who-is-it-for-entrepreneurship-END-------------------*/
+/*------------------entrepreneurship-sign-up-START-------------------*/
+.entrepreneurship-sign-up {
+  margin-bottom: 70px;
+}
+.entrepreneurship-sign-up__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.entrepreneurship-sign-up__text {
+  color: #347571;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.entrepreneurship-sign-up__button {
+  background: linear-gradient(to right, #00a651, #0296b6);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.entrepreneurship-sign-up__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.entrepreneurship-sign-up__button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/*------------------entrepreneurship-sign-up-END-------------------*/
 /*------------------promotions-START-------------------*/
 .main-block-promotions {
   margin-top: 200px;
