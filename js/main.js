@@ -1,13 +1,13 @@
 
 // burger menu
 
-const iconMenuButton = document.querySelector('.header__icon-button');
+const iconMenuButton = document.querySelector('.menu__icon-button');
 const menuBody = document.querySelector('.menu__body');
 
 if (iconMenuButton && menuBody) {
   iconMenuButton.addEventListener('click', function (e) {
     document.body.classList.toggle('body_lock')
-    iconMenuButton.classList.toggle('header__icon-button_active');
+    iconMenuButton.classList.toggle('menu__icon-button_active');
     menuBody.classList.toggle('menu__body_active');
   })
 }
@@ -16,163 +16,13 @@ let menuItems = [...document.querySelectorAll('.menu__item')];
 for (const i in menuItems) {
   let el = menuItems[i]
   el.addEventListener('click', function (e) {
-
-    if (!el.querySelector('.menu__sub-list')) {
-
-      if (document.querySelector('.menu__body.menu__body_active')) {
-        document.body.classList.toggle('body_lock')
-        iconMenuButton.classList.toggle('header__icon-button_active');
-        menuBody.classList.toggle('menu__body_active');
-      }
-
-    }
-
-  })
-}
-
-let menuSubItem = [...document.querySelectorAll('.menu__sub-item')];
-for (const i in menuSubItem) {
-  let el = menuSubItem[i]
-  el.addEventListener('click', function (e) {
-
-
-
     if (document.querySelector('.menu__body.menu__body_active')) {
       document.body.classList.toggle('body_lock')
-      iconMenuButton.classList.toggle('header__icon-button_active');
+      iconMenuButton.classList.toggle('menu__icon-button_active');
       menuBody.classList.toggle('menu__body_active');
     }
-
-
-
   })
 }
-
-
-// открытие подменю
-
-let subLists = document.querySelectorAll('.menu__sub-list');
-if (subLists.length > 0) {
-  for (let i = 0; i < subLists.length; i++) {
-    const subList = subLists[i];
-    subList.parentElement.addEventListener('click', function (e) {
-
-      // for (let y = 0; y < subLists.length; y++) {
-      //   if (subLists[y].parentElement.classList.contains('menu__item_active')) {
-      //     subLists[y].parentElement.classList.toggle('menu__item_active');
-      //   }
-
-      // }
-
-      subList.parentElement.classList.toggle('menu__item_active');
-    })
-  }
-}
-
-// скрыть меню начало
-
-// Получаем элементы, с которыми будем работать
-const menu = document.querySelector('.header'); // Всё меню
-const menuItem = document.querySelector('.info-body-header__info'); // Определённый элемент меню
-// const block1 = document.querySelector('.main-block-main-page__title'); // Первый блок
-// const block2 = document.querySelector('.educational-center__header-title'); // Второй блок
-
-let block1
-if (document.querySelector('.main-block-main-page__title')) {
-  block1 = document.querySelector('.main-block-main-page__title');
-} else if (document.querySelector('.main-block-math-classes__title')) {
-  block1 = document.querySelector('.main-block-math-classes__title');
-} else if (document.querySelector('.main-block-physics__title')) {
-  block1 = document.querySelector('.main-block-physics__title');
-} else if (document.querySelector('.main-block-ukrainian-language-and-literature__title')) {
-  block1 = document.querySelector('.main-block-ukrainian-language-and-literature__title');
-} else if (document.querySelector('.main-block-chemistry__title')) {
-  block1 = document.querySelector('.main-block-chemistry__title');
-} else if (document.querySelector('.main-block-biology__title')) {
-  block1 = document.querySelector('.main-block-biology__title');
-} else if (document.querySelector('.main-block-geography__title')) {
-  block1 = document.querySelector('.main-block-geography__title');
-} else if (document.querySelector('.main-block-story__title')) {
-  block1 = document.querySelector('.main-block-story__title');
-} else if (document.querySelector('.main-block-zno__title')) {
-  block1 = document.querySelector('.main-block-zno__title');
-} else if (document.querySelector('.main-block-financial-literacy__title')) {
-  block1 = document.querySelector('.main-block-financial-literacy__title');
-}
-
-let block2
-if (document.querySelector('.educational-center__header-title')) {
-  block2 = document.querySelector('.educational-center__header-title');
-} else if (document.querySelector('.advantages-financial-literacy__title')) {
-  block2 = document.querySelector('.advantages-financial-literacy__title')
-} else if (document.querySelector('.price-cards__header-title')) {
-  block2 = document.querySelector('.price-cards__header-title')
-}
-
-let menuHidden = false; // Флаг, показывающий, что меню задвинуто
-let menuItemHidden = false; // Флаг, показывающий, что элемент меню скрыт
-
-let lastScrollTop = 0; // Переменная для отслеживания направления прокрутки
-
-// Обработчик события прокрутки
-window.addEventListener('scroll', function () {
-  // Получаем текущую позицию прокрутки
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-  // Получаем координаты блоков относительно окна
-  const block1Rect = block1.getBoundingClientRect();
-  const block2Rect = block2.getBoundingClientRect();
-
-  // Проверка для скрытия элемента меню при достижении блока 1
-  if (block1Rect.top <= 0 && !menuItemHidden) {
-    menuItem.classList.add('hidden');
-    menuItemHidden = true; // Обновляем флаг
-  } else if (block1Rect.top > 0 && menuItemHidden) {
-    menuItem.classList.remove('hidden');
-    menuItemHidden = false; // Возвращаем элемент
-  }
-
-  // Проверка для задвигания меню при достижении блока 2
-  if (scrollTop > lastScrollTop && block2Rect.top < 0 && !menuHidden) {
-    // Прокрутка вниз и верх экрана ниже верхней границы блока 2
-    menu.classList.add('hidden');
-    menuHidden = true; // Скрываем меню
-  } else if (scrollTop < lastScrollTop && block2Rect.top < 0 && menuHidden) {
-    // Прокрутка вверх и верх экрана ниже верхней границы блока 2
-    menu.classList.remove('hidden');
-    menuHidden = false; // Показываем меню
-  }
-
-  // Обновляем позицию прокрутки для определения направления
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-});
-
-// // Обработчик события прокрутки
-// window.addEventListener('scroll', function () {
-//   // Получаем координаты блоков относительно окна
-//   const block1Rect = block1.getBoundingClientRect();
-//   const block2Rect = block2.getBoundingClientRect();
-
-//   // Проверка для скрытия элемента меню при достижении блока 1
-//   if (block1Rect.top <= 0 && !menuItemHidden) {
-//     menuItem.classList.add('hidden');
-//     menuItemHidden = true; // Обновляем флаг
-//   } else if (block1Rect.top > 0 && menuItemHidden) {
-//     menuItem.classList.remove('hidden');
-//     menuItemHidden = false; // Возвращаем элемент
-//   }
-
-//   // Проверка для задвигания меню при достижении блока 2
-//   if (block2Rect.top <= 0 && !menuHidden) {
-//     menu.classList.add('hidden');
-//     menuHidden = true; // Обновляем флаг
-//   } else if (block2Rect.top > 0 && menuHidden) {
-//     menu.classList.remove('hidden');
-//     menuHidden = false; // Возвращаем меню
-//   }
-// });
-
-// скрыть меню конец
 
 // открытие формы
 // window.onload = function() {
@@ -322,47 +172,300 @@ document.addEventListener('keydown', function (e) {
 
 
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  // loop: true,
-  slidesPerView: 2,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10
+// const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'horizontal',
+//   // loop: true,
+//   slidesPerView: 2,
+//   breakpoints: {
+//     320: {
+//       slidesPerView: 1,
+//       spaceBetween: 10
+//     },
+//     // when window width is >= 480px
+//     480: {
+//       slidesPerView: 1,
+//       spaceBetween: 10
+//     },
+//     // when window width is >= 640px
+//     640: {
+//       slidesPerView: 1.15,
+//       spaceBetween: 30
+//     },
+//     900: {
+//       slidesPerView: 2.15,
+//       spaceBetween: 30
+//     }
+//   },
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+
+//     clickable: true,
+
+//     dynamicBullets: true,
+//   },
+
+//   grabCursor: true,
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+
+// });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Превью-слайдер
+  const thumbsSlider = new Swiper(".thumbs-slider", {
+    slidesPerView: 3, // Количество видимых превью
+    spaceBetween: 10, // Расстояние между превью
+    freeMode: true, // Свободная прокрутка
+    watchSlidesProgress: true, // Следить за видимостью слайдов
+  });
+
+  // Основной слайдер
+  const mainSlider = new Swiper(".main-slider", {
+    loop: true, // Бесконечный слайдер
+    autoplay: {
+      delay: 5000, // Автопрокрутка каждые 5 секунд
     },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 10
+    navigation: {
+      nextEl: ".swiper-button-next", // Стрелка "вперед"
+      prevEl: ".swiper-button-prev", // Стрелка "назад"
     },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 1.15,
-      spaceBetween: 30
+    thumbs: {
+      swiper: thumbsSlider, // Связь с превью-слайдером
     },
-    900: {
-      slidesPerView: 2.15,
-      spaceBetween: 30
-    }
-  },
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-
-    clickable: true,
-
-    dynamicBullets: true,
-  },
-
-  grabCursor: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-
+  });
 });
+
+
+
+
+
+
+
+// Модальное окно блока карточек "подробнее"
+
+// Получаем все кнопки "More Details" и модальные окна
+const detailButtons = document.querySelectorAll(".service-cards__button-details");
+const modals = document.querySelectorAll(".service-cards__modal");
+const body = document.body;
+
+// Функция для открытия модального окна
+detailButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const modalId = button.getAttribute("data-modal"); // Получаем id модального окна
+    const modal = document.getElementById(`modal-${modalId}`); // Находим нужное окно
+
+    if (modal) {
+      modal.style.display = "block";
+      body.style.overflow = "hidden"; // Блокируем скролл
+      setTimeout(() => (modal.style.opacity = "1"), 10); // Плавное появление
+    }
+  });
+});
+
+// Функция для закрытия модальных окон
+modals.forEach(modal => {
+  const closeButton = modal.querySelector(".service-cards__modal-close");
+
+  closeButton.addEventListener("click", () => {
+    closeModal(modal);
+  });
+
+  // Закрытие модального окна при нажатии на Esc
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.style.display === "block") {
+      closeModal(modal);
+    }
+  });
+});
+
+function closeModal(modal) {
+  modal.style.opacity = "0";
+  setTimeout(() => {
+    modal.style.display = "none";
+    body.style.overflow = "auto"; // Включаем скролл
+  }, 300); // Время на анимацию исчезновения
+}
+
+
+
+// cleanRooms
+
+// старое меню с локациями
+
+// function relocateElement() {
+//   const menuBody = document.querySelector('.menu__body');
+//   const menuContainer = document.querySelector('.menu__container');
+//   const originalParent = document.querySelector('.menu__main-info-body');
+
+//   if (menuBody && menuContainer && originalParent) {
+//     if (window.innerWidth <= 799.98) {
+//       // Перемещаем элемент `.menu__body` после `.menu__container`
+//       if (!menuContainer.nextElementSibling || menuContainer.nextElementSibling !== menuBody) {
+//         menuContainer.insertAdjacentElement('afterend', menuBody);
+//       }
+//     } else {
+//       // Возвращаем элемент `.menu__body` в `.menu__main-info-body`
+//       if (!originalParent.contains(menuBody)) {
+//         originalParent.appendChild(menuBody);
+//       }
+//     }
+//   } else {
+//     console.error('Не удалось найти элементы. Проверьте селекторы.');
+//   }
+// }
+
+// // Выполняем функцию при загрузке страницы и при изменении размера окна
+// window.addEventListener('resize', relocateElement);
+// window.addEventListener('orientationchange', relocateElement);
+// window.addEventListener('DOMContentLoaded', relocateElement);
+// window.addEventListener('load', relocateElement);
+// window.addEventListener('pageshow', relocateElement);
+// document.addEventListener('visibilitychange', () => {
+//   if (!document.hidden) {
+//     relocateElement();
+//   }
+// });
+
+// // 
+
+// function relocateCommunicationElement() {
+//   const communicationBody = document.querySelector('.menu__communication-body');
+//   const menuContainer = document.querySelector('.menu__container');
+//   const originalParent = document.querySelector('.menu__main-info-body');
+
+//   if (communicationBody && menuContainer && originalParent) {
+//     if (window.innerWidth <= 637.98) {
+//       // Перемещаем элемент `.menu__communication-body` после `.menu__container`
+//       if (!menuContainer.nextElementSibling || menuContainer.nextElementSibling !== communicationBody) {
+//         menuContainer.insertAdjacentElement('afterend', communicationBody);
+//       }
+//     } else {
+//       // Возвращаем элемент `.menu__communication-body` в `.menu__main-info-body`
+//       if (!originalParent.contains(communicationBody)) {
+//         originalParent.appendChild(communicationBody);
+//       }
+//     }
+//   } else {
+//     console.error('Не удалось найти элементы. Проверьте селекторы.');
+//   }
+// }
+
+// // Выполняем функцию при загрузке страницы и при изменении размера окна
+// window.addEventListener('resize', relocateCommunicationElement);
+// window.addEventListener('orientationchange', relocateCommunicationElement);
+// window.addEventListener('DOMContentLoaded', relocateCommunicationElement);
+// window.addEventListener('load', relocateCommunicationElement);
+// window.addEventListener('pageshow', relocateCommunicationElement);
+// document.addEventListener('visibilitychange', () => {
+//   if (!document.hidden) {
+//     relocateCommunicationElement();
+//   }
+// });
+
+// //
+
+
+// function relocateContactsItem() {
+//   const contactsItem = document.querySelectorAll('.menu__contacts-item')[1];
+//   const menuList = document.querySelector('.menu__container');
+//   const originalParent = document.querySelector('.menu__contacts-body');
+
+//   if (contactsItem && menuList && originalParent) {
+//     if (window.innerWidth <= 352.98) {
+//       // Перемещаем элемент `.menu__contacts-item:nth-child(2)` после `.menu__list`
+//       if (!menuList.nextElementSibling || menuList.nextElementSibling !== contactsItem) {
+//         menuList.insertAdjacentElement('afterend', contactsItem);
+//       }
+//     } else {
+//       // Возвращаем элемент `.menu__contacts-item:nth-child(2)` в исходный контейнер
+//       if (!originalParent.contains(contactsItem)) {
+//         originalParent.appendChild(contactsItem);
+//       }
+//     }
+//   } else {
+//     console.error('Не удалось найти элементы. Проверьте селекторы.');
+//   }
+// }
+
+// // Выполняем функцию при загрузке страницы и при изменении размера окна
+// window.addEventListener('resize', relocateContactsItem);
+// window.addEventListener('orientationchange', relocateContactsItem);
+// window.addEventListener('DOMContentLoaded', relocateContactsItem);
+// window.addEventListener('load', relocateContactsItem);
+// window.addEventListener('pageshow', relocateContactsItem);
+// document.addEventListener('visibilitychange', () => {
+//   if (!document.hidden) {
+//     relocateContactsItem();
+//   }
+// });
+
+
+
+
+// modal form
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('contact-modal');
+  const openModalBtns = document.querySelectorAll('.btn-modal-trigger');
+  const closeModalBtn = modal.querySelector('.modal-close');
+  const overlay = modal.querySelector('.modal-overlay');
+
+  const openModal = () => {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Disable scrolling
+  };
+
+  const closeModal = () => {
+    modal.classList.remove('active');
+    document.body.style.overflow = ''; // Enable scrolling
+  };
+
+  openModalBtns.forEach((btn) => btn.addEventListener('click', openModal));
+  closeModalBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', closeModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // Phone number mask
+  const phoneInputs = document.querySelectorAll('.phone-mask');
+  phoneInputs.forEach(input => {
+    input.addEventListener('input', (e) => {
+      let value = e.target.value.replace(/\D/g, '');
+      if (value.length > 0) {
+        value = `+${value.slice(0, 1)} (${value.slice(1, 4)}) ${value.slice(4, 7)}-${value.slice(7, 9)}-${value.slice(9, 11)}`;
+      }
+      e.target.value = value.slice(0, 18);
+    });
+  });
+});
+
+
+// main-form-block
+document.addEventListener("DOMContentLoaded", () => {
+  const phoneInput = document.getElementById("phone");
+
+  phoneInput.addEventListener("input", (e) => {
+    let value = e.target.value.replace(/\D/g, "");
+    if (value.startsWith("44")) {
+      value = "+" + value;
+    } else {
+      value = "+44 " + value;
+    }
+
+    value = value.replace(/(\+44\s\d{4})(\d{3})(\d{3})/, "$1 $2 $3");
+    e.target.value = value;
+  });
+});
+
