@@ -4352,7 +4352,7 @@ body {
 .course-duration-entrepreneurship__card:nth-child(1) .course-duration__card-header, .course-duration-entrepreneurship__card:nth-child(4) .course-duration__card-header {
   border-bottom-color: #02CED8;
 }
-.course-duration-entrepreneurship__card:nth-child(1) .course-duration__button, .course-duration-entrepreneurship__card:nth-child(4) .course-duration__button {
+.course-duration-entrepreneurship__card:nth-child(1) .course-duration-entrepreneurship__button, .course-duration-entrepreneurship__card:nth-child(4) .course-duration-entrepreneurship__button {
   background-color: white;
   border: 1px solid #02CED8;
 }
@@ -4366,7 +4366,7 @@ body {
 .course-duration-entrepreneurship__card:hover:nth-child(1) .course-duration__card-header, .course-duration-entrepreneurship__card:hover:nth-child(4) .course-duration__card-header {
   border-bottom-color: white;
 }
-.course-duration-entrepreneurship__card:hover:nth-child(1) .course-duration__button, .course-duration-entrepreneurship__card:hover:nth-child(4) .course-duration__button {
+.course-duration-entrepreneurship__card:hover:nth-child(1) .course-duration-entrepreneurship__button, .course-duration-entrepreneurship__card:hover:nth-child(4) .course-duration-entrepreneurship__button {
   border-color: white;
   border-width: 2px;
   background-color: #02CED8;
