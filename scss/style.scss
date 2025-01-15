@@ -4696,6 +4696,211 @@ body {
 /*------------------main-block-business-english-end-------------------*/
 
 
+
+/*------------------main-block-english-with-native-speaker-START-------------------*/
+
+
+.main-content {
+
+    &__main-block-english-with-native-speaker {}
+}
+
+.main-block-english-with-native-speaker {
+
+    margin-top: 200px;
+    margin-bottom: 70px;
+
+    @media (max-width: 1199.98px) {
+        margin-top: 50px;
+    }
+
+    &__container {}
+
+    &__content {
+        background-image: url(../img/main-block-english-with-native-speaker/main-block-main-block-english-with-native-speaker-bg.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 250px;
+        // padding-bottom: 80px;
+
+        @media (max-width: 689.98px) {
+            & {
+                background-position: center 250px;
+            }
+        }
+
+        @media (max-width: 429.98px) {
+            & {
+                background-position: center 200px;
+            }
+        }
+    }
+
+    &__header {
+        margin-bottom: 60px;
+        display: flex;
+    }
+
+    &__title {
+        font-size: 52px;
+        font-weight: 900;
+        // color: #7A40D3;
+        // color: #91C5FF;
+        color: #0196B6;
+
+        line-height: calc(62 / 52 * 100%);
+
+        text-align: center;
+
+        width: max-content;
+        margin: 0 auto;
+        position: relative;
+
+        @media (max-width: 429.98px) {
+            & {
+                font-size: 38px;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 60px;
+    }
+
+    &__item {
+        flex: 45%;
+
+        display: flex;
+
+        &:nth-child(1) {
+            justify-content: flex-end;
+
+            &:nth-child(1)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                right: 5%;
+            }
+
+            &:nth-child(1)>:nth-child(1) {
+                margin-right: 15%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            justify-content: flex-start;
+
+            &:nth-child(2)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                left: 5%;
+            }
+
+            &:nth-child(2)>:nth-child(1) {
+                margin-left: 15%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            justify-content: center;
+
+            &:nth-child(3)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                right: 5%;
+            }
+
+            &:nth-child(3)>:nth-child(1) {
+                margin-right: 25%;
+                margin-right: 0;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            justify-content: flex-start;
+
+            &:nth-child(4)>:nth-child(1)>:nth-child(3) {
+                position: absolute;
+                top: -22%;
+                left: 5%;
+            }
+
+            &:nth-child(4)>:nth-child(1) {
+                margin-left: 25%;
+
+                @media (max-width: 689.98px) {
+                    & {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &__card-body {
+        width: 300px;
+        height: auto;
+        box-shadow: 0px 0px 3px 2px rgb(0 0 1 / 20%);
+
+        padding: 30px 20px 20px 20px;
+
+        border-radius: 10px;
+
+        background-color: white;
+
+        position: relative;
+    }
+
+    &__card-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    &__card-text {
+        font-size: 18px;
+        color: #6B6B6B;
+
+        line-height: calc(24 / 18 * 100%);
+    }
+
+    &__decor-icon {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.-container {}
+
+
+
+
+/*------------------main-block-english-with-native-speaker-end-------------------*/
+
+
+
 /*------------------main-block-geography-start-------------------*/
 
 .main-content {
