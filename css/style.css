@@ -5903,7 +5903,7 @@ body {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-image: url("../img/icon/call.svg");
+  background-image: url("../img/icon/call-w.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -5916,7 +5916,7 @@ body {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-image: url("../img/icon/mail.svg");
+  background-image: url("../img/icon/mail-w.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
