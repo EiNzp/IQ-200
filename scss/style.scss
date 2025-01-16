@@ -8114,65 +8114,164 @@ body {
 
 /*------------------footer-------------------*/
 
-.footer {
-    background-color: #9ce9ea;
+// .footer {
+//     background-color: #9ce9ea;
 
-    &__container {
+//     &__container {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         padding-top: 25px;
+//         padding-bottom: 25px;
+//         row-gap: 20px;
+//     }
+
+//     &__header {}
+
+//     &__header-item {
+//         font-size: 20px;
+//         line-height: calc(24 / 20 * 100%);
+//     }
+
+//     &__content {}
+// }
+
+// .-container {}
+
+// .content-footer {
+//     &__list {
+//         display: flex;
+//         column-gap: 40px;
+//         row-gap: 20px;
+//         text-align: center;
+
+//         @media (max-width: 374.98px) {
+//             & {
+//                 flex-direction: column;
+//             }
+//         }
+//     }
+
+//     &__item {}
+
+//     &__herder {
+//         font-size: 16px;
+//         line-height: calc(20 / 16 * 100%);
+//         font-weight: 700;
+//         padding-bottom: 10px;
+//     }
+
+//     &__phone {
+//         font-size: 16px;
+//         line-height: calc(20 / 16 * 100%);
+//         font-weight: 400;
+//     }
+
+//     &__text {
+//         font-size: 16px;
+//         line-height: calc(22 / 16 * 100%);
+//         font-weight: 400;
+//     }
+// }
+
+.footer {
+    background-color: #222; // Темный фон
+    color: #fff; // Белый текст
+    padding: 20px 0; // Увеличили общий отступ
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; // Выровняем элементы по верхнему краю
+        flex-wrap: wrap; // Адаптивность
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        gap: 30px; // Расстояние между блоками
+    }
+
+    .footer__contacts {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        row-gap: 20px;
+        gap: 20px; // Расстояние между контактами
+
+        .footer__phone,
+        .footer__email {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px; // Крупнее текст
+            position: relative;
+            padding-left: 30px; // Отступ для иконки
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+
+
+            &:nth-child(1):before,
+            &:nth-child(2):before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+                background-image: url('../img/icon/call.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            &:nth-child(3):before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 20px;
+                height: 20px;
+                background-image: url("../img/icon/mail.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .footer__email {
+            padding-left: 30px; // Без иконки
+        }
     }
 
-    &__header {}
-
-    &__header-item {
-        font-size: 20px;
-        line-height: calc(24 / 20 * 100%);
-    }
-
-    &__content {}
-}
-
-.-container {}
-
-.content-footer {
-    &__list {
+    .footer__social {
         display: flex;
-        column-gap: 40px;
-        row-gap: 20px;
-        text-align: center;
+        gap: 20px; // Расстояние между иконками соцсетей
 
-        @media (max-width: 374.98px) {
-            & {
-                flex-direction: column;
+        .footer__social-link {
+            display: inline-block;
+
+            .footer__icon {
+                width: 32px; // Увеличенный размер иконок
+                height: 32px;
+
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
     }
 
-    &__item {}
+    @media (max-width: 768px) {
+        .footer__container {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    &__herder {
-        font-size: 16px;
-        line-height: calc(20 / 16 * 100%);
-        font-weight: 700;
-        padding-bottom: 10px;
-    }
-
-    &__phone {
-        font-size: 16px;
-        line-height: calc(20 / 16 * 100%);
-        font-weight: 400;
-    }
-
-    &__text {
-        font-size: 16px;
-        line-height: calc(22 / 16 * 100%);
-        font-weight: 400;
+        .footer__social {
+            margin-top: 10px;
+        }
     }
 }
+
 
 /*------------------popup-form-------------------*/
 
