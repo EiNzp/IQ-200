@@ -96,8 +96,24 @@ if (document.querySelector('.main-block-main-page__title')) {
   block1 = document.querySelector('.main-block-story__title');
 } else if (document.querySelector('.main-block-zno__title')) {
   block1 = document.querySelector('.main-block-zno__title');
+} else if (document.querySelector('.main-block-english-for-children__title')) {
+  block1 = document.querySelector('.main-block-english-for-children__title');
+} else if (document.querySelector('.main-block-english-for-adults__title')) {
+  block1 = document.querySelector('.main-block-english-for-adults__title');
+} else if (document.querySelector('.main-block-hmt-in-english__title')) {
+  block1 = document.querySelector('.main-block-hmt-in-english__title');
+} else if (document.querySelector('.main-block-preparation-for-international-exams__title')) {
+  block1 = document.querySelector('.main-block-preparation-for-international-exams__title');
+} else if (document.querySelector('.main-block-business-english__title')) {
+  block1 = document.querySelector('.main-block-business-english__title');
+} else if (document.querySelector('.main-block-english-with-native-speaker__title')) {
+  block1 = document.querySelector('.main-block-english-with-native-speaker__title');
 } else if (document.querySelector('.main-block-financial-literacy__title')) {
   block1 = document.querySelector('.main-block-financial-literacy__title');
+} else if (document.querySelector('.main-block-entrepreneurship__title')) {
+  block1 = document.querySelector('.main-block-entrepreneurship__title');
+} else if (document.querySelector('.main-block-promotions__header-title')) {
+  block1 = document.querySelector('.main-block-promotions__header-title');
 }
 
 let block2
@@ -105,8 +121,12 @@ if (document.querySelector('.educational-center__header-title')) {
   block2 = document.querySelector('.educational-center__header-title');
 } else if (document.querySelector('.advantages-financial-literacy__title')) {
   block2 = document.querySelector('.advantages-financial-literacy__title')
+} else if (document.querySelector('.course-events-entrepreneurship__title')) {
+  block2 = document.querySelector('.course-events-entrepreneurship__title')
 } else if (document.querySelector('.price-cards__header-title')) {
   block2 = document.querySelector('.price-cards__header-title')
+} else if (document.querySelector('.main-block-promotions__referral-info')) {
+  block2 = document.querySelector('.main-block-promotions__referral-info')
 }
 
 let menuHidden = false; // Флаг, показывающий, что меню задвинуто
@@ -119,9 +139,11 @@ window.addEventListener('scroll', function () {
   // Получаем текущую позицию прокрутки
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  // Получаем координаты блоков относительно окна
+  // Получаем координаты блоков относительно окна  
   const block1Rect = block1.getBoundingClientRect();
   const block2Rect = block2.getBoundingClientRect();
+
+
 
   // Проверка для скрытия элемента меню при достижении блока 1
   if (block1Rect.top <= 0 && !menuItemHidden) {
