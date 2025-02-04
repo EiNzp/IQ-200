@@ -196,6 +196,29 @@ window.addEventListener('scroll', function () {
 
 // скрыть меню конец
 
+// Пролистывание к подвалу START
+
+document.querySelectorAll('.menu__link').forEach(function (link) {
+  link.addEventListener('click', function (event) {
+    const linkText = link.textContent.trim();  // Получаем текст ссылки
+    if (linkText === 'Контакти' || linkText === 'Контакты') {
+      event.preventDefault();  // Отменяем стандартное поведение ссылки
+
+      // Находим элемент footer
+      const footer = document.querySelector('footer');
+      if (footer) {
+        // Прокручиваем страницу к footer
+        footer.scrollIntoView({
+          behavior: 'smooth',  // Плавная прокрутка
+          block: 'start'       // Позиционирование в начале элемента
+        });
+      }
+    }
+  });
+});
+
+// Пролистывание к подвалу END
+
 // открытие формы
 // window.onload = function() {
 const popupForm = document.querySelector('.popup-form');
