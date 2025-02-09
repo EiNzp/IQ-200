@@ -5948,184 +5948,110 @@ body {
 }
 
 /*------------------popup-form-------------------*/
-.popup-form {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
-  left: 0;
-  z-index: 50;
-  overflow-y: scroll;
-}
-.popup-form__body {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
-}
-.popup-form__content {
-  background-color: #fff;
-  color: #000;
-  position: relative;
-}
-.popup-form__close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  height: 25px;
-  width: 25px;
-  cursor: pointer;
-}
-.popup-form__close-img {
-  height: 25px;
-  width: 25px;
-}
-.popup-form_disable {
-  display: none;
+/*------------------popup-thankyou-------------------*/
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
 
-.form-popup {
-  width: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 70px;
-  padding-right: 70px;
-  text-align: center;
-}
-@media (max-width: 424.98px) {
-  .form-popup {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-.form-popup__header {
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: #2e2d2d;
-  font-size: 20px;
-}
-@media (max-width: 424.98px) {
-  .form-popup__header {
-    margin-bottom: 25px;
-  }
-}
-.form-popup__name {
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 142.8571428571%;
-  color: #333;
-  vertical-align: middle;
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-.form-popup__phone {
-  display: block;
-  width: 100%;
-  height: 38px;
-  padding: 8px 12px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 142.8571428571%;
-  color: #333;
-  vertical-align: middle;
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-.form-popup__phone::-webkit-outer-spin-button, .form-popup__phone::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-.form-popup__phone, .form-popup__phone:hover, .form-popup__phone:focus {
-  -webkit-appearance: none;
-          appearance: none;
-  -moz-appearance: textfield;
-}
-.form-popup__opisanie {
-  display: block;
-  width: 100%;
-  height: 150px;
-  padding: 8px 12px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 142.8571428571%;
-  color: #333;
-  vertical-align: middle;
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-.form-popup__button {
-  display: inline-block;
-  padding: 9px 15px;
-  color: #000;
-  border: 0;
-  line-height: inherit;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 0;
-  width: 100%;
-  background-image: linear-gradient(180deg, #9ce9ea, #9ce9ea);
-  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
-  font-size: 15px;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 0.5px;
-}
-.form-popup__button:hover {
-  color: #fff;
-}
-/*------------------popup-thankyou-------------------*/
-.popup-thankyou {
+.modal {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
-  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s;
+  z-index: 999;
   overflow-y: scroll;
 }
-.popup-thankyou_disable {
-  display: none;
+.modal--hidden {
+  opacity: 0;
+  visibility: hidden;
 }
-.popup-thankyou__body {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
-}
-.popup-thankyou__content {
-  background-color: #fff;
-  color: #000;
+.modal__content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
   position: relative;
-  height: 150px;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.popup-thankyou__close {
+.modal__close {
   position: absolute;
   top: 5px;
   right: 5px;
-  height: 25px;
-  width: 25px;
+  background: none;
+  border: none;
   cursor: pointer;
+  height: 30px;
+  width: 30px;
 }
-.popup-thankyou__close-img {
-  height: 25px;
+.modal__close img {
   width: 25px;
+  height: 25px;
 }
-.popup-thankyou__text {
-  text-align: center;
-  line-height: 1.5;
-  color: green;
+.modal__title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.success-modal__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form__label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  row-gap: 5px;
   font-weight: 600;
+  font-size: 16px;
+}
+.form__label textarea {
+  resize: none;
+}
+.form__input {
+  padding: 10px;
+  border: 1px solid #02CED8;
+  border-radius: 5px;
+}
+.form__input--phone::-moz-placeholder {
+  color: #aaa;
+}
+.form__input--phone::placeholder {
+  color: #aaa;
+}
+
+.button {
+  padding: 10px 15px;
+  background: #02CED8;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+}
+.button:hover {
+  color: white;
+}
+.button--submit {
+  width: 100%;
 }

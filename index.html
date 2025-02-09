@@ -133,8 +133,10 @@
                             <li class="main-block-main-page__item">
                                 <h1 class="main-block-main-page__title">ЦЕНТР<br>ОСВІТИ<br><span
                                         class="main-block-main-page__title_style-aqua">"IQ200"</span></h1>
-                                <p class="main-block-main-page__info">ОНЛАЙН І ОФЛАЙН РЕПЕТИТОРИ ЗА ВСІМ ПРЕДМЕТАМИ ПО СУЧАСНІЙ МЕТОДИЦІ З ІНДИВІДУАЛЬНИМ ПІДХОДОМ</p>
-                                <button class="main-block-main-page__button" type="button">Записатись на
+                                <p class="main-block-main-page__info">ОНЛАЙН І ОФЛАЙН РЕПЕТИТОРИ ЗА ВСІМ ПРЕДМЕТАМИ ПО
+                                    СУЧАСНІЙ МЕТОДИЦІ З ІНДИВІДУАЛЬНИМ ПІДХОДОМ</p>
+                                <button class="main-block-main-page__button button--open" data-modal="popup-form"
+                                    type="button">Записатись на
                                     заняття</button>
 
                             </li>
@@ -283,9 +285,10 @@
                             </div>
                             <div class="card-top-offers__body">
                                 <ul class="card-top-offers__list">
-                                    <li class="card-top-offers__list-item">На поглибленій діагностиці виявимо прогалини на предмет
-прогалини в знаннях
-</li>
+                                    <li class="card-top-offers__list-item">На поглибленій діагностиці виявимо прогалини
+                                        на предмет
+                                        прогалини в знаннях
+                                    </li>
                                     <li class="card-top-offers__list-item">Складемо індивідуальний план занять за
                                         зручним для вас графіком</li>
                                     <li class="card-top-offers__list-item">На теоретичних заняттях та практикумах
@@ -297,7 +300,8 @@
                                     <span>від 240 грн</span>
                                     <span>60 хвилин</span>
                                 </div>
-                                <button class="card-top-offers__button">Записатись</button>
+                                <button class="card-top-offers__button button--open"
+                                    data-modal="popup-form">Записатись</button>
                             </div>
                         </li>
                         <li class="top-offers__card card-top-offers">
@@ -318,7 +322,8 @@
                                     <span>від 520 грн</span>
                                     <span>60 хвилин</span>
                                 </div>
-                                <button class="card-top-offers__button">Записатись</button>
+                                <button class="card-top-offers__button button--open"
+                                    data-modal="popup-form">Записатись</button>
                             </div>
                         </li>
                         <li class="top-offers__card card-top-offers">
@@ -338,7 +343,8 @@
                                     <span>490 грн</span>
                                     <span>60 хвилин</span>
                                 </div>
-                                <button class="card-top-offers__button">Записатись</button>
+                                <button class="card-top-offers__button button--open"
+                                    data-modal="popup-form">Записатись</button>
                             </div>
                         </li>
                         <li class="top-offers__card card-top-offers">
@@ -361,7 +367,8 @@
                                     <span>від 320 грн</span>
                                     <span>60 хвилин</span>
                                 </div>
-                                <button class="card-top-offers__button">Записатись</button>
+                                <button class="card-top-offers__button button--open"
+                                    data-modal="popup-form">Записатись</button>
                             </div>
                         </li>
 
@@ -532,7 +539,7 @@
 
     </div>
 
-    <div class="popup-form popup-form_disable" id="popup-form">
+    <!-- <div class="popup-form popup-form_disable" id="popup-form">
         <div class="popup-form__body">
             <div class="popup-form__content">
                 <div class="popup-form__close"><img class="popup-form__close-img" src="img/form/icons8-close.svg"
@@ -563,9 +570,48 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+
+    <div class="modal modal--hidden" id="popup-form">
+        <div class="modal__content">
+            <button class="modal__close">
+                <img src="img/form/icons8-close.svg" alt="Закрити">
+            </button>
+            <h2 class="modal__title">Заповніть Ваші дані та ми зв'яжемося з Вами найближчим часом.</h2>
+            <form class="form" id="contact-form">
+                <label class="form__label">Ваше ім'я
+                    <input type="text" class="form__input" name="name" placeholder="Ваше ім'я" required>
+                </label>
+                <label class="form__label">Ваш номер телефону
+                    <input type="tel" class="form__input form__input--phone" name="phone" required>
+                </label>
+                <label class="form__label">Коментар
+                    <textarea class="form__input" name="comment" placeholder="Коментар (необов'язково)"
+                        rows="4"></textarea>
+                </label>
+                <button type="submit" class="button button--submit">Відправити</button>
+            </form>
+        </div>
     </div>
 
+    <div class="modal modal--hidden success-modal" id="success-modal">
+        <div class="modal__content">
+            <button class="modal__close">
+                <img src="img/form/icons8-close.svg" alt="Закрити">
+            </button>
+            <h2 class="modal__title success-modal__title">Дані успішно надіслані, ми з вами зв'яжемося найближчим часом
+            </h2>
+        </div>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

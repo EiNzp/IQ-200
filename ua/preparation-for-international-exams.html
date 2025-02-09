@@ -198,7 +198,7 @@
                         <div class="price-cards__right">від 540 грн</div>
                      </div>
                      <div class="price-cards__card-footer">
-                        <button class="price-cards__button">Записатись</button>
+                        <button class="price-cards__button button--open" data-modal="popup-form">Записатись</button>
                      </div>
                   </div>
 
@@ -212,7 +212,7 @@
                         <div class="price-cards__right">від 340 грн</div>
                      </div>
                      <div class="price-cards__card-footer">
-                        <button class="price-cards__button">Записатись</button>
+                        <button class="price-cards__button button--open" data-modal="popup-form">Записатись</button>
                      </div>
                   </div>
 
@@ -226,7 +226,7 @@
                         <div class="price-cards__right">від 290 грн</div>
                      </div>
                      <div class="price-cards__card-footer">
-                        <button class="price-cards__button">Записатись</button>
+                        <button class="price-cards__button button--open" data-modal="popup-form">Записатись</button>
                      </div>
                   </div>
 
@@ -243,7 +243,7 @@
                         </div>
                      </div>
                      <div class="price-cards__card-footer">
-                        <button class="price-cards__button">Записатись</button>
+                        <button class="price-cards__button button--open" data-modal="popup-form">Записатись</button>
                      </div>
                   </div>
                </div>
@@ -281,39 +281,41 @@
       </footer>
    </div>
 
-   <div class="popup-form popup-form_disable" id="popup-form">
-      <div class="popup-form__body">
-         <div class="popup-form__content">
-            <div class="popup-form__close"><img class="popup-form__close-img" src="../img/form/icons8-close.svg" alt="">
-            </div>
-            <form class="popup-form__form-popup form-popup" id="form-popup" name="email-form" method="POST">
-               <h2 class="form-popup__header">Безкоштовний розрахунок меблів</h2>
-               <input style="display: none;" class="form-popup__topic-input" type="text" name="topic"
-                  value="Заказать бесплатный расчет">
-               <input class="form-popup__name" id="name" maxlength="256" name="name" placeholder="Ваше ім'я"
-                  required="required" type="text">
-               <input class="form-popup__phone" id="Phone" type="number" maxlength="256" name="phone"
-                  placeholder="Телефон" required="required" type="text">
-               <textarea class="form-popup__opisanie" id="Opisanie" name="opisanie" placeholder="Опис меблів"
-                  required="required" style="height: 150px;"></textarea>
-               <input class="form-popup__button" type="submit" id="formPopupSubmit" value="Відправити на розрахунок">
-            </form>
-         </div>
+   <div class="modal modal--hidden" id="popup-form">
+      <div class="modal__content">
+         <button class="modal__close">
+            <img src="../img/form/icons8-close.svg" alt="Закрити">
+         </button>
+         <h2 class="modal__title">Заповніть Ваші дані та ми зв'яжемося з Вами найближчим часом.</h2>
+         <form class="form" id="contact-form">
+            <label class="form__label">Ваше ім'я
+               <input type="text" class="form__input" name="name" placeholder="Ваше ім'я" required>
+            </label>
+            <label class="form__label">Ваш номер телефону
+               <input type="tel" class="form__input form__input--phone" name="phone" required>
+            </label>
+            <label class="form__label">Коментар
+               <textarea class="form__input" name="comment" placeholder="Коментар (необов'язково)" rows="4"></textarea>
+            </label>
+            <button type="submit" class="button button--submit">Відправити</button>
+         </form>
       </div>
    </div>
-   <div class="popup-thankyou popup-thankyou_disable" id="popup-thankyou">
-      <div class="popup-thankyou__body">
-         <div class="popup-thankyou__content">
-            <div class="popup-thankyou__close"><img class="popup-thankyou__close-img" src="../img/form/icons8-close.svg"
-                  alt=""></div>
-            <div class="popup-thankyou__info">
-               <p class="popup-thankyou__text">Дякую за звернення.<br>Заявку надіслано.</p>
-            </div>
-         </div>
+
+   <div class="modal modal--hidden success-modal" id="success-modal">
+      <div class="modal__content">
+         <button class="modal__close">
+            <img src="../img/form/icons8-close.svg" alt="Закрити">
+         </button>
+         <h2 class="modal__title success-modal__title">Дані успішно надіслані, ми з вами зв'яжемося найближчим часом
+         </h2>
       </div>
    </div>
 
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
    <script src="../js/swiper-bundle.min.js"></script>
    <script src="../js/main.js"></script>
 </body>

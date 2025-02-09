@@ -220,147 +220,244 @@ document.querySelectorAll('.menu__link').forEach(function (link) {
 // Пролистывание к подвалу END
 
 // открытие формы
-// window.onload = function() {
-const popupForm = document.querySelector('.popup-form');
-const buttonsActivForm = [...document.querySelectorAll('[class*="button-form-activ"]')];
-const popupThankyou = document.querySelector('.popup-thankyou');
-
-for (const i in buttonsActivForm) {
-  let el = buttonsActivForm[i];
-
-  el.addEventListener('click', function (e) {
-    e.preventDefault();
-    popupForm.classList.remove("popup-form_disable");
-    document.body.classList.add('body_lock');
-  })
-}
-
-// закрытие формы
-
-const closeButton = document.querySelector('.popup-form__close');
-if (closeButton) {
-  closeButton.addEventListener('click', function () {
-    popupForm.classList.add("popup-form_disable");
-    document.body.classList.remove('body_lock')
-  });
-}
-
-popupForm.addEventListener('click', function (e) {
-  if (!e.target.closest('.popup-form__content')) {
-    popupForm.classList.add("popup-form_disable");
-    document.body.classList.remove('body_lock');
-  }
-})
-
-// провнрка на нажатие кнопки "Esc" у нее код 27
-document.addEventListener('keydown', function (e) {
-  if (e.which === 27) {
-    popupForm.classList.add("popup-form_disable");
-    document.body.classList.remove('body_lock');
-  }
-})
-
-// отправка формы
-
-$('.form-popup').on('submit', function (event) {
-
-  event.stopPropagation();
-  event.preventDefault();
-
-  let form = this,
-    submit = $('.submit', form),
-    data = new FormData(),
-    files = $('input[type=file]')
+// // window.onload = function() {
 
 
-  $('.submit', form).val('Отправка...');
-  $('input, textarea', form).attr('disabled', '');
+// const popupForm = document.querySelector('.popup-form');
+// const buttonsActivForm = [...document.querySelectorAll('[class*="button-form-activ"]')];
+// const popupThankyou = document.querySelector('.popup-thankyou');
 
-  data.append('Имя', $('[name="name"]', form).val());
-  data.append('Телефон', $('[name="phone"]', form).val());
-  data.append('Описание', $('[name="opisanie"]', form).val());
+// for (const i in buttonsActivForm) {
+//   let el = buttonsActivForm[i];
+
+//   el.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     popupForm.classList.remove("popup-form_disable");
+//     document.body.classList.add('body_lock');
+//   })
+// }
+
+// // закрытие формы
+
+// const closeButton = document.querySelector('.popup-form__close');
+// if (closeButton) {
+//   closeButton.addEventListener('click', function () {
+//     popupForm.classList.add("popup-form_disable");
+//     document.body.classList.remove('body_lock')
+//   });
+// }
+
+// popupForm.addEventListener('click', function (e) {
+//   if (!e.target.closest('.popup-form__content')) {
+//     popupForm.classList.add("popup-form_disable");
+//     document.body.classList.remove('body_lock');
+//   }
+// })
+
+// // провнрка на нажатие кнопки "Esc" у нее код 27
+// document.addEventListener('keydown', function (e) {
+//   if (e.which === 27) {
+//     popupForm.classList.add("popup-form_disable");
+//     document.body.classList.remove('body_lock');
+//   }
+// })
+
+// // отправка формы
+
+// $('.form-popup').on('submit', function (event) {
+
+//   event.stopPropagation();
+//   event.preventDefault();
+
+//   let form = this,
+//     submit = $('.submit', form),
+//     data = new FormData(),
+//     files = $('input[type=file]')
 
 
-  files.each(function (key, file) {
-    let cont = file.files;
-    if (cont) {
-      $.each(cont, function (key, value) {
-        data.append(key, value);
-      });
-    }
-  });
+//   $('.submit', form).val('Отправка...');
+//   $('input, textarea', form).attr('disabled', '');
 
-  $.ajax({
-    url: 'ajax.php',
-    type: 'POST',
-    data: data,
-    cache: false,
-    dataType: 'json',
-    processData: false,
-    contentType: false,
-    xhr: function () {
-      let myXhr = $.ajaxSettings.xhr();
+//   data.append('Имя', $('[name="name"]', form).val());
+//   data.append('Телефон', $('[name="phone"]', form).val());
+//   data.append('Описание', $('[name="opisanie"]', form).val());
 
-      if (myXhr.upload) {
-        myXhr.upload.addEventListener('progress', function (e) {
-          if (e.lengthComputable) {
-            let percentage = (e.loaded / e.total) * 100;
-            percentage = percentage.toFixed(0);
-            $('.submit', form)
-              .html(percentage + '%');
-          }
-        }, false);
-      }
 
-      return myXhr;
-    },
-    error: function (jqXHR, textStatus) {
-      // Тут выводим ошибку
-    },
-    complete: function () {
-      // Тут можем что-то делать ПОСЛЕ успешной отправки формы
-      form.reset()
-      $('#name').removeAttr('disabled');
-      $('#Phone').removeAttr('disabled');
-      $('#Opisanie').removeAttr('disabled');
-      $('#formPopupSubmit').removeAttr('disabled');
-      popupForm.classList.add("popup-form_disable");
-      popupThankyou.classList.remove("popup-thankyou_disable");
-    }
-  });
+//   files.each(function (key, file) {
+//     let cont = file.files;
+//     if (cont) {
+//       $.each(cont, function (key, value) {
+//         data.append(key, value);
+//       });
+//     }
+//   });
 
-  return false;
-});
+//   $.ajax({
+//     url: 'ajax.php',
+//     type: 'POST',
+//     data: data,
+//     cache: false,
+//     dataType: 'json',
+//     processData: false,
+//     contentType: false,
+//     xhr: function () {
+//       let myXhr = $.ajaxSettings.xhr();
 
-// закрытие popup-thankyou
+//       if (myXhr.upload) {
+//         myXhr.upload.addEventListener('progress', function (e) {
+//           if (e.lengthComputable) {
+//             let percentage = (e.loaded / e.total) * 100;
+//             percentage = percentage.toFixed(0);
+//             $('.submit', form)
+//               .html(percentage + '%');
+//           }
+//         }, false);
+//       }
 
-const closeButtonThankyou = document.querySelector('.popup-thankyou__close');
-if (closeButton) {
-  closeButtonThankyou.addEventListener('click', function () {
-    popupThankyou.classList.add("popup-thankyou_disable");
-    document.body.classList.remove('body_lock')
-  });
-}
+//       return myXhr;
+//     },
+//     error: function (jqXHR, textStatus) {
+//       // Тут выводим ошибку
+//     },
+//     complete: function () {
+//       // Тут можем что-то делать ПОСЛЕ успешной отправки формы
+//       form.reset()
+//       $('#name').removeAttr('disabled');
+//       $('#Phone').removeAttr('disabled');
+//       $('#Opisanie').removeAttr('disabled');
+//       $('#formPopupSubmit').removeAttr('disabled');
+//       popupForm.classList.add("popup-form_disable");
+//       popupThankyou.classList.remove("popup-thankyou_disable");
+//     }
+//   });
 
-popupThankyou.addEventListener('click', function (e) {
-  if (!e.target.closest('.popup-thankyou__content')) {
-    popupThankyou.classList.add("popup-thankyou_disable");
-    document.body.classList.remove('body_lock');
-  }
-})
+//   return false;
+// });
 
-// провнрка на нажатие кнопки "Esc" у нее код 27
-document.addEventListener('keydown', function (e) {
-  if (e.which === 27) {
-    popupThankyou.classList.add("popup-thankyou_disable");
-    document.body.classList.remove('body_lock');
-  }
-})
+// // закрытие popup-thankyou
+
+// const closeButtonThankyou = document.querySelector('.popup-thankyou__close');
+// if (closeButton) {
+//   closeButtonThankyou.addEventListener('click', function () {
+//     popupThankyou.classList.add("popup-thankyou_disable");
+//     document.body.classList.remove('body_lock')
+//   });
+// }
+
+// popupThankyou.addEventListener('click', function (e) {
+//   if (!e.target.closest('.popup-thankyou__content')) {
+//     popupThankyou.classList.add("popup-thankyou_disable");
+//     document.body.classList.remove('body_lock');
+//   }
+// })
+
+// // провнрка на нажатие кнопки "Esc" у нее код 27
+// document.addEventListener('keydown', function (e) {
+//   if (e.which === 27) {
+//     popupThankyou.classList.add("popup-thankyou_disable");
+//     document.body.classList.remove('body_lock');
+//   }
+// })
 
 
 // конец скрипта отправки формы
 
 // }
+
+// попап форма
+
+// $(document).ready(function () {
+//   $('.form__input--phone').mask('+38 (000) 000-00-00');
+// });
+$(document).ready(function () {
+  const phoneInput = $('.form__input--phone');
+
+  phoneInput.mask('+38 (000) 000-00-00', {
+    placeholder: "+38 (___) ___-__-__"
+  });
+
+  // phoneInput.val('+38 ');
+
+  phoneInput.on("click focus", function () {
+    if ($(this).val().length < 5) {
+      // $(this).val('+38 ');
+    }
+    setTimeout(() => {
+      this.setSelectionRange(5, 5);
+    }, 10);
+  });
+
+  // $("#contact-form").on("submit", function (event) {
+  //   const phoneValue = phoneInput.val();
+  //   if (phoneValue.length < 19) { // Полностью введенный номер: +38 (XXX) XXX-XX-XX
+  //     alert("Будь ласка, введіть коректний номер телефону!");
+  //     phoneInput.focus();
+  //     event.preventDefault();
+  //   }
+  // });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const openButtons = document.querySelectorAll("[data-modal]");
+  const modals = document.querySelectorAll(".modal");
+  const closeButtons = document.querySelectorAll(".modal__close");
+  const body = document.body;
+
+  openButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const modalId = button.getAttribute("data-modal");
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.remove("modal--hidden");
+        body.classList.add("no-scroll");
+      }
+    });
+  });
+
+  closeButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const modal = button.closest(".modal");
+      modal.classList.add("modal--hidden");
+      body.classList.remove("no-scroll");
+    });
+  });
+
+  window.addEventListener("click", (event) => {
+    modals.forEach(modal => {
+      if (event.target === modal) {
+        modal.classList.add("modal--hidden");
+        body.classList.remove("no-scroll");
+      }
+    });
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      modals.forEach(modal => {
+        modal.classList.add("modal--hidden");
+        body.classList.remove("no-scroll");
+      });
+    }
+  });
+
+  document.getElementById("contact-form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    document.getElementById("popup-form").classList.add("modal--hidden");
+    document.getElementById("success-modal").classList.remove("modal--hidden");
+    // body.classList.remove("no-scroll");
+    event.target.reset();
+  });
+});
+
+
+// попап форма конец
+
+
+
+
+
+
 
 
 // slider Swiper

@@ -134,13 +134,14 @@
                   </div>
 
                   <div class="main-block-promotions__table-block-container">
-<!--                      <h3 class="main-block-promotions__table-block-header">Приведи друзей и получи месяц бесплатного
+                     <!--                      <h3 class="main-block-promotions__table-block-header">Приведи друзей и получи месяц бесплатного
                         обучения:</h3> -->
-                     <h3 class="main-block-promotions__table-block-header">Приведи друга, и получите оба скидку 5% в месяц обучения</h3>
+                     <h3 class="main-block-promotions__table-block-header">Приведи друга, и получите оба скидку 5% в
+                        месяц обучения</h3>
                      <h3 class="main-block-promotions__table-block-header">Скидка 5% на второй и третий предмет</h3>
                      <h3 class="main-block-promotions__table-block-header">5% для одного из детей из одной семьи</h3>
-                     
-<!--                      <table class="main-block-promotions__table-referral-table">
+
+                     <!--                      <table class="main-block-promotions__table-referral-table">
                         <thead>
                            <tr class="main-block-promotions__table-header-row">
                               <th class="main-block-promotions__table-header">Скидка</th>
@@ -171,7 +172,7 @@
                         </tbody>
                      </table> -->
 
-<!--                      <p class="main-block-promotions__referral-info">
+                     <!--                      <p class="main-block-promotions__referral-info">
                         Скидка 5% на второй и третий предмет.
                      </p> -->
                   </div>
@@ -220,39 +221,42 @@
       </footer>
    </div>
 
-   <div class="popup-form popup-form_disable" id="popup-form">
-      <div class="popup-form__body">
-         <div class="popup-form__content">
-            <div class="popup-form__close"><img class="popup-form__close-img" src="../img/form/icons8-close.svg" alt="">
-            </div>
-            <form class="popup-form__form-popup form-popup" id="form-popup" name="email-form" method="POST">
-               <h2 class="form-popup__header">Безкоштовний розрахунок меблів</h2>
-               <input style="display: none;" class="form-popup__topic-input" type="text" name="topic"
-                  value="Заказать бесплатный расчет">
-               <input class="form-popup__name" id="name" maxlength="256" name="name" placeholder="Ваше ім'я"
-                  required="required" type="text">
-               <input class="form-popup__phone" id="Phone" type="number" maxlength="256" name="phone"
-                  placeholder="Телефон" required="required" type="text">
-               <textarea class="form-popup__opisanie" id="Opisanie" name="opisanie" placeholder="Опис меблів"
-                  required="required" style="height: 150px;"></textarea>
-               <input class="form-popup__button" type="submit" id="formPopupSubmit" value="Відправити на розрахунок">
-            </form>
-         </div>
+   <div class="modal modal--hidden" id="popup-form">
+      <div class="modal__content">
+         <button class="modal__close">
+            <img src="../img/form/icons8-close.svg" alt="Закрити">
+         </button>
+         <h2 class="modal__title">Заполните Ваши данные и мы свяжемся с Вами в ближайшее время.</h2>
+         <form class="form" id="contact-form">
+            <label class="form__label">Ваше имя
+               <input type="text" class="form__input" name="name" placeholder="Ваше имя" required>
+            </label>
+            <label class="form__label">Ваш номер телефона
+               <input type="tel" class="form__input form__input--phone" name="phone" required>
+            </label>
+            <label class="form__label">Комментарий
+               <textarea class="form__input" name="comment" placeholder="Комментарий (необязательно)"
+                  rows="4"></textarea>
+            </label>
+            <button type="submit" class="button button--submit">Отправить</button>
+         </form>
       </div>
    </div>
-   <div class="popup-thankyou popup-thankyou_disable" id="popup-thankyou">
-      <div class="popup-thankyou__body">
-         <div class="popup-thankyou__content">
-            <div class="popup-thankyou__close"><img class="popup-thankyou__close-img" src="../img/form/icons8-close.svg"
-                  alt=""></div>
-            <div class="popup-thankyou__info">
-               <p class="popup-thankyou__text">Дякую за звернення.<br>Заявку надіслано.</p>
-            </div>
-         </div>
+
+   <div class="modal modal--hidden success-modal" id="success-modal">
+      <div class="modal__content">
+         <button class="modal__close">
+            <img src="../img/form/icons8-close.svg" alt="Закрити">
+         </button>
+         <h2 class="modal__title success-modal__title">Данные успешно отправлены, мы с вами свяжемся в ближайшее время
+         </h2>
       </div>
    </div>
 
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
    <script src="../js/swiper-bundle.min.js"></script>
    <script src="../js/main.js"></script>
 </body>
