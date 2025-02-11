@@ -127,6 +127,8 @@ if (document.querySelector('.educational-center__header-title')) {
   block2 = document.querySelector('.price-cards__header-title')
 } else if (document.querySelector('.main-block-promotions__referral-info')) {
   block2 = document.querySelector('.main-block-promotions__referral-info')
+} else if (document.querySelector('.promotion-card__title')) {
+  block2 = document.querySelector('.promotion-card__title')
 }
 
 let menuHidden = false; // Флаг, показывающий, что меню задвинуто
@@ -452,6 +454,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // попап форма конец
+
 
 
 

@@ -4696,6 +4696,12 @@ body {
 /*------------------promotions-START-------------------*/
 .main-block-promotions {
   margin-top: 200px;
+  margin-bottom: 80px;
+}
+@media (max-width: 1200px) {
+  .main-block-promotions {
+    margin-top: 50px;
+  }
 }
 .main-block-promotions__header {
   display: flex;
@@ -4806,6 +4812,49 @@ body {
   .main-block-promotions__referral-info {
     font-size: 12px;
   }
+}
+
+.main-block-promotions__cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .main-block-promotions__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.promotion-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 280px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.promotion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.promotion-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.promotion-card__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #444;
+}
+.promotion-card__text {
+  font-size: 1rem;
+  color: #666;
 }
 
 .discount {
