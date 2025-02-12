@@ -264,77 +264,89 @@ document.querySelectorAll('.menu__link').forEach(function (link) {
 //   }
 // })
 
-// // отправка формы
+// отправка формы
 
-// $('.form-popup').on('submit', function (event) {
+$('#contact-form').on('submit', function (event) {
 
-//   event.stopPropagation();
-//   event.preventDefault();
+  event.stopPropagation();
+  event.preventDefault();
 
-//   let form = this,
-//     submit = $('.submit', form),
-//     data = new FormData(),
-//     files = $('input[type=file]')
-
-
-//   $('.submit', form).val('Отправка...');
-//   $('input, textarea', form).attr('disabled', '');
-
-//   data.append('Имя', $('[name="name"]', form).val());
-//   data.append('Телефон', $('[name="phone"]', form).val());
-//   data.append('Описание', $('[name="opisanie"]', form).val());
+  let form = this,
+    submit = $('.submit', form),
+    data = new FormData(),
+    files = $('input[type=file]')
 
 
-//   files.each(function (key, file) {
-//     let cont = file.files;
-//     if (cont) {
-//       $.each(cont, function (key, value) {
-//         data.append(key, value);
-//       });
-//     }
-//   });
+  $('.submit', form).val('Отправка...');
+  $('input, textarea', form).attr('disabled', '');
 
-//   $.ajax({
-//     url: 'ajax.php',
-//     type: 'POST',
-//     data: data,
-//     cache: false,
-//     dataType: 'json',
-//     processData: false,
-//     contentType: false,
-//     xhr: function () {
-//       let myXhr = $.ajaxSettings.xhr();
+  data.append('Имя', $('[name="name"]', form).val());
+  data.append('Телефон', $('[name="phone"]', form).val());
+  data.append('Комментарий', $('[name="comment"]', form).val());
 
-//       if (myXhr.upload) {
-//         myXhr.upload.addEventListener('progress', function (e) {
-//           if (e.lengthComputable) {
-//             let percentage = (e.loaded / e.total) * 100;
-//             percentage = percentage.toFixed(0);
-//             $('.submit', form)
-//               .html(percentage + '%');
-//           }
-//         }, false);
-//       }
 
-//       return myXhr;
-//     },
-//     error: function (jqXHR, textStatus) {
-//       // Тут выводим ошибку
-//     },
-//     complete: function () {
-//       // Тут можем что-то делать ПОСЛЕ успешной отправки формы
-//       form.reset()
-//       $('#name').removeAttr('disabled');
-//       $('#Phone').removeAttr('disabled');
-//       $('#Opisanie').removeAttr('disabled');
-//       $('#formPopupSubmit').removeAttr('disabled');
-//       popupForm.classList.add("popup-form_disable");
-//       popupThankyou.classList.remove("popup-thankyou_disable");
-//     }
-//   });
+  files.each(function (key, file) {
+    let cont = file.files;
+    if (cont) {
+      $.each(cont, function (key, value) {
+        data.append(key, value);
+      });
+    }
+  });
 
-//   return false;
-// });
+  $.ajax({
+    url: 'ajax.php',
+    type: 'POST',
+    data: data,
+    cache: false,
+    dataType: 'json',
+    processData: false,
+    contentType: false,
+    xhr: function () {
+      let myXhr = $.ajaxSettings.xhr();
+
+      if (myXhr.upload) {
+        myXhr.upload.addEventListener('progress', function (e) {
+          if (e.lengthComputable) {
+            let percentage = (e.loaded / e.total) * 100;
+            percentage = percentage.toFixed(0);
+            $('.submit', form)
+              .html(percentage + '%');
+          }
+        }, false);
+      }
+
+      return myXhr;
+    },
+    error: function (jqXHR, textStatus) {
+      // Тут выводим ошибку
+    },
+    complete: function () {
+      // Тут можем что-то делать ПОСЛЕ успешной отправки формы
+      // $('#contact-form').reset()
+
+      document.querySelector('#contact-form').reset()
+
+
+      $('.form__input').removeAttr('disabled');
+
+      // $('#name').removeAttr('disabled');
+      // $('#phone').removeAttr('disabled');
+      // $('#comment').removeAttr('disabled');
+
+      document.querySelector('#popup-form').classList.add("modal--hidden");
+      // document.querySelector('body').classList.remove("no-scroll");
+
+      document.getElementById("success-modal").classList.remove("modal--hidden");
+
+      // $('#formPopupSubmit').removeAttr('disabled');
+      // popupForm.classList.add("popup-form_disable");
+      // popupThankyou.classList.remove("popup-thankyou_disable");
+    }
+  });
+
+  return false;
+});
 
 // // закрытие popup-thankyou
 
@@ -443,13 +455,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.getElementById("contact-form").addEventListener("submit", (event) => {
-    event.preventDefault();
-    document.getElementById("popup-form").classList.add("modal--hidden");
-    document.getElementById("success-modal").classList.remove("modal--hidden");
-    // body.classList.remove("no-scroll");
-    event.target.reset();
-  });
+  // document.getElementById("contact-form").addEventListener("submit", (event) => {
+  //   event.preventDefault();
+  //   document.getElementById("popup-form").classList.add("modal--hidden");
+  //   document.getElementById("success-modal").classList.remove("modal--hidden");
+  //   // body.classList.remove("no-scroll");
+  //   event.target.reset();
+  // });
 });
 
 
